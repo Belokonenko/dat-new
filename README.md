@@ -1,8 +1,7 @@
-# Positivus 
-landing page
+# DAT
+Online shope
 
 ## Демонстрация
-https://belokonenko.github.io/Positivus/
 
 ## Установка
 
@@ -11,5 +10,3 @@ cd ваш-репозиторий
 npm i
 npm gulp
 
-# gulp-new
-# dat-new
