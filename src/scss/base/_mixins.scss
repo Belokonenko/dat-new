@@ -67,3 +67,25 @@
         font-display: swap;
     }
 }
+
+
+// !плавное убирание placeholder
+@mixin hide-placeholder($time: 300, $effect: ease) {
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-moz-placeholder,
+  &:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity #{$time} + ms $effect;
+  }
+
+  &:focus {
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-moz-placeholder,
+    &:-ms-input-placeholder {
+      opacity: 0;
+      transition: opacity #{$time} + ms $effect;
+    }
+  }
+}
