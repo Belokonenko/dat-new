@@ -5,8 +5,7 @@ Online shope
 
 ## Установка
 
-git clone https://belokonenko.github.io/Positivus/
-cd ваш-репозиторий
+git clone https://belokonenko.github.io/dat-new/cd ваш-репозиторий
 npm i
 npm gulp
 
