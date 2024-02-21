@@ -1,0 +1,93 @@
+<header class="header">
+    @@include('top.html')
+
+    <div class="header__sub container">
+        @@include('logo.html',{"path":"img/logo.svg"})
+
+        <div class="search header__search">
+            <form class="search__form" method="GET">
+                <input
+                    class="search__input"
+                    type="text"
+                    name="query"
+                    placeholder="Search..."
+                />
+
+                <button class="button search__button" type="search">
+                    <span>search</span>
+                </button>
+            </form>
+        </div>
+
+        <!-- order -->
+
+        <div class="order header__order">
+            <div class="round-button">
+                @@include('button-round.html', {"id":"phone", "theme": "button_theme_dark"})
+            </div>
+
+            <div class="order__wrap">
+                <div class="order__tel-block">
+                    <a
+                        class="button order__tel-ref order__tel-menu"
+                        href="tel:+380671150058"
+                        >+38 (067) 115 00 58
+                    </a>
+
+                    <ul class="list order__list">
+                        <li>
+                            <a
+                                class="button order__tel-ref"
+                                href="tel:+380671150058"
+                                >+38 (067) 115 00 57</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="button order__tel-ref"
+                                href="tel:+380671150058"
+                                >+38 (067) 115 00 56</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="button order__tel-ref"
+                                href="tel:+380671150058"
+                                >+38 (067) 115 00 55</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a class="order__text" href="#">Order a call back</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- order -->
+
+        @@include('button-round.html',
+        {"id":"scale", "theme": "button_theme_dark"})
+
+        <div class="header__like-wrap">
+            <button
+                class="button button_round transition button-round button_theme_dark"
+            >
+                <svg class="button-round__img heart" width="16" height="16">
+                    <use xlink:href="./img/sprite.svg#heart"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="basket">
+            @@include('button-round.html',
+            {"id":"basket", "theme": "button_theme_dark"})
+            <span class="basket__price"> 0.0$ </span>
+        </div>
+    </div>
+
+    @@include('nav-prod.html')
+
+    @@include('dropdown-panel.html')
+</header>

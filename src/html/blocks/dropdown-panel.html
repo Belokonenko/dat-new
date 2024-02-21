@@ -1,0 +1,125 @@
+<section class="dropdown-panel">
+    <div class="container dropdown-panel__container">
+        <a class="button logo dropdown-panel__logo" href="index.html">
+            <img class="logo__img" src="./img/logo_white.svg" alt="logo" />
+        </a>
+
+        <button
+            class="button button_round transition button-round button_theme_light dropdown-panel__scale"
+        >
+            <svg class="button-round__img"  width="16" height="16">
+                <use xlink:href="./images/sprite.svg#scale"></use>
+            </svg>
+        </button>
+
+        <div class="basket dropdown-panel__basket">
+            @@include('button-round.html',
+            {"id":"basket","theme":"button_theme_light"})
+            <span class="basket__price dropdown-panel__price"> 0.0$ </span>
+        </div>
+
+        <!-- === -->
+
+        <button
+            class="button button_round transition button-round button_theme_light dropdown-panel__heart"
+        >
+            <svg class="button-round__img heart"  width="16" height="16">
+                <use xlink:href="./images/sprite.svg#heart"></use>
+            </svg>
+        </button>
+
+        <div class="search dropdown-panel__search">
+            <form class="search__form dropdown-panel__form" method="GET">
+                <input
+                    class="search__input"
+                    type="text"
+                    name="query"
+                    placeholder="Search..."
+                />
+                <button class="button search__button" type="button">
+                    <span>search</span>
+                </button>
+            </form>
+        </div>
+
+        <!-- order -->
+        <div class="order dropdown-panel__order">
+            <div class="round-button">
+                @@include('button-round.html',
+                {"id":"phone", "theme":"button_theme_light"})
+            </div>
+
+            <div class="order__wrap">
+                <div class="order__tel-block">
+                    <a
+                        class="button order__tel-ref order__tel-menu dropdown-panel__tel"
+                        href="tel:+380671150058"
+                        >+38 (067) 115 00 58</a
+                    >
+
+                    <ul class="list order__list dropdown-panel__list">
+                        <li>
+                            <a
+                                class="button order__tel-ref dropdown-panel__tel"
+                                href="tel:+380671150058"
+                                >+38 (067) 115 00 57</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="button order__tel-ref dropdown-panel__tel"
+                                href="tel:+380671150058"
+                                >+38 (067) 115 00 56</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="button order__tel-ref dropdown-panel__tel"
+                                href="tel:+380671150058"
+                                >+38 (067) 115 00 55</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="button order__tel-ref dropdown-panel__tel"
+                                href="tel:+380671150058"
+                                >+38 (067) 115 00 55</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a class="button order__text" href="#">Order a call back</a>
+                </div>
+            </div>
+        </div>
+        <!-- /order -->
+    </div>
+    
+    <!-- decore line -->
+    <div class="container">
+        <div class="dropdown-panel__dec-line"></div>
+    </div>
+
+    <nav class="dropdown-panel__nav container">
+        <ul class="list">
+            <li class="item dropdown-panel__item">
+                <a class="button nav__button" href="#">About the company</a>
+            </li>
+            <li class="item dropdown-panel__item">
+                <a class="button nav__button" href="#">Product</a>
+            </li>
+            <li class="item dropdown-panel__item">
+                <a class="button nav__button" href="#">Catalog</a>
+            </li>
+            <li class="item dropdown-panel__item">
+                <a class="button nav__button" href="#">Payment and delivery</a>
+            </li>
+            <li class="item dropdown-panel__item">
+                <a class="button nav__button" href="#">Partners Contacts</a>
+            </li>
+        </ul>
+    </nav>
+
+</section>

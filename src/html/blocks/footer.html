@@ -1,0 +1,110 @@
+<footer class="footer">
+    <div class="foorer__container container">
+        <div class="footer__info">
+            <div class="footer__col-logo col">
+                <!-- @@include('../../blocks//logo/logo.html', {"path": "./img/logo.svg"}) -->
+                @@include('logo.html', {"path":"./img/logo.svg"})
+                <p class="footer__text-offer">
+                    We offer our customers a wide range of vegetable seeds.
+                </p>
+            </div>
+            <div class="footer__col-info col">
+                <h3 class="footer__title">information</h3>
+                <a class="button footer__ref" href="#">About company</a>
+                <a class="button footer__ref" href="#">Payment and delivery</a>
+                <a class="button footer__ref" href="#">Partners</a>
+            </div>
+
+            <div class="footer__col-goods col">
+                <h3 class="footer__title">Goods</h3>
+                <a class="button footer__ref" href="#">Product catalog</a>
+                <a class="button footer__ref" href="#"
+                    >Plant protection products</a
+                >
+                <a class="button footer__ref" href="#">Seeds</a>
+                <a class="button footer__ref" href="#">Fertilizers</a>
+                <a class="button footer__ref" href="#">Agronomist to help</a>
+            </div>
+
+            <div class="footer__col-contacts col">
+                <h3 class="footer__title">Contacts</h3>
+                
+                <!-- order -->
+
+                <div class="order ">
+                    <div class="round-button">
+                        @@include('button-round.html', {"id":"phone", "theme": "button_theme_dark"})
+                    </div>
+
+                    <div class="order__wrap">
+                        <div class="order__tel-block">
+                            <a
+                                class="button order__tel-ref order__tel-menu"
+                                href="tel:+380671150058"
+                                >+38 (067) 115 00 58
+                            </a>
+
+                            <ul class="list order__list">
+                                <li>
+                                    <a
+                                        class="button order__tel-ref"
+                                        href="tel:+380671150058"
+                                        >+38 (067) 115 00 57</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="button order__tel-ref"
+                                        href="tel:+380671150058"
+                                        >+38 (067) 115 00 56</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="button order__tel-ref"
+                                        href="tel:+380671150058"
+                                        >+38 (067) 115 00 55</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <a class="order__text" href="#"
+                                >Order a call back</a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- order -->
+
+                <div class="footer__mail-wrap">
+                    <button
+                        class="button button_round transition button-round button_theme_dark"
+                    >
+                        <svg
+                            class="button-round__img mail"
+                            width="16"
+                            height="16"
+                        >
+                            <use xlink:href="./images/sprite.svg#mail"></use>
+                        </svg>
+                    </button>
+
+                    <a class="button footer__mail" href="mailto:DAT@gmail.com"
+                        >DAT@gmail.com</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__c container">
+        <div class="footer__c-line container"></div>
+        <p class="footer__c-text">© 2022 DAT</p>
+        <!-- --- arrow --- -->
+        <a class="ref footer__arrow" href="#"> </a>
+        <!-- --- /arrow --- -->
+    </div>
+</footer>

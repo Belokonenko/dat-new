@@ -1,0 +1,357 @@
+<main class="catalog-prod">
+    <div class="decor-ellipse_0 catalog-prod__dec-ell"></div>
+    <div class="decor-ellipse_0 catalog-prod__dec-ell"></div>
+    <div class="decor-ellipse_1 catalog-prod__dec-ell"></div>
+    <div class="decor-ellipse_1 catalog-prod__dec-ell"></div>
+    <div class="decor-ellipse_0 catalog-prod__dec-ell"></div>
+    <div class="decor-ellipse_1 catalog-prod__dec-ell"></div>
+
+    <!-- content -->
+    <div class="catalog-prod__wrap container">
+        <!-- pagination -->
+        <ul class="list pagination container catalog-prod__pagination">
+            <li class="pagination__item">
+                <a class="button pagination__ref" href="index.html">home</a>
+            </li>
+            <li class="pagination__item">
+                <a class="button pagination__ref">catalog</a>
+            </li>
+            <li class="pagination__item">
+                <a
+                    class="button pagination__ref pagination__ref_active"
+                    href="#"
+                >
+                    plant protection
+                </a>
+            </li>
+        </ul>
+
+        <!-- catalog title -->
+
+        <h1
+            class="title title_leaf-l title_size_l title_leaf-r catalog-prod__title"
+        >
+            Plant protection
+        </h1>
+
+        <!-- block num, button filter and sort -->
+
+        <div class="sort-wrap">
+            <!-- show prod num -->
+            <p class="catalog-prod__counter">
+                <span class="catalog-prod__counter-num">621</span>
+                products
+            </p>
+
+            <!-- button filter mob version -->
+            <button class="filter-btn-mob btn-dat" hidden>Filter</button>
+
+            <!-- sort -->
+            <form class="sort-by">
+                <select class="sort">
+                    <option class="sort-options" value="" disabled selected>
+                        sort by
+                    </option>
+                    <option class="sort-options" value="price-low-to-high">
+                        Price: Low to High
+                    </option>
+                    <option class="sort-options" value="price-high-to-low">
+                        Price: High to Low
+                    </option>
+                    <option class="sort-options" value="popularity">
+                        Popularity
+                    </option>
+                </select>
+            </form>
+
+            <!-- <label for="category-select">Select a category:</label> -->
+            <!-- <select id="category-select"> -->
+            <!--     <option value="herbicides">Herbicides (33)</option> -->
+            <!--     <option value="fungicides-1">Fungicides (33)</option> -->
+            <!--     <option value="fungicides-2">Fungicides (37)</option> -->
+            <!--     <option value="insecticides">Insecticides (33)</option> -->
+            <!--     <option value="desiccants">Desiccants (32)</option> -->
+            <!--     <option value="stain-removers">Stain removers (73)</option> -->
+            <!--     <option value="adjuvants">Adjuvants (33)</option> -->
+            <!--     <option value="rodenticides">Rodenticides (13)</option> -->
+            <!--     <option value="retardants">Retardants (233)</option> -->
+            <!-- </select> -->
+        </div>
+
+        <!-- filter panel and block cards products -->
+        <div class="fliter-cards__wrap">
+            <!-- filter panel -->
+            <div class="filter__wrap">
+                <ul class="list categories__list">
+                    <li class="categories__item categories__item_active">
+                        <span class="category__name">Herbicides</span>
+                        <span class="category__count">(33)</span>
+                    </li>
+                    <li class="categories__item">
+                        <span class="category__name">Fungicides</span>
+                        <span class="category__count">(33)</span>
+                    </li>
+                    <li class="categories__item">
+                        <span class="category__name">Fungicides</span>
+                        <span class="category__count">(37)</span>
+                    </li>
+                    <li class="categories__item">
+                        <span class="category__name">Insecticides</span>
+                        <span class="category__count">(33)</span>
+                    </li>
+                    <li class="categories__item">
+                        <span class="category__name">Desiccants</span>
+                        <span class="category__count">(32)</span>
+                    </li>
+                    <li class="categories__item">
+                        <span class="category__name">Stain removers</span>
+                        <span class="category__count">(73)</span>
+                    </li>
+                    <li class="categories__item">
+                        <span class="category__name">Adjuvants</span>
+                        <span class="category__count">(33)</span>
+                    </li>
+                    <li class="categories__item">
+                        <span class="category__name">Rodenticides</span>
+                        <span class="category__count">(13)</span>
+                    </li>
+                    <li class="categories__item">
+                        <span class="category__name">Retardants</span>
+                        <span class="category__count">(233)</span>
+                    </li>
+                </ul>
+                <label for="category-select">Select a category:</label>
+                <select id="category-select" class="list categories__list" multiple>
+                    <option value="herbicides" class="categories__item">
+                        <span class="category__name">Retardants</span>
+                        <span class="category__count">(233)</span>
+                    </option>
+                    <option value="fungicides-1" class="categories__item">
+                        Fungicides (33)
+                    </option>
+                    <option value="fungicides-2" class="categories__item">
+                        Fungicides (37)
+                    </option>
+                    <option value="insecticides" class="categories__item">
+                        Insecticides (33)
+                    </option>
+                    <option value="desiccants" class="categories__item">
+                        Desiccants (32)
+                    </option>
+                    <option value="stain-removers" class="categories__item">
+                        Stain removers (73)
+                    </option>
+                    <option value="adjuvants" class="categories__item">
+                        Adjuvants (33)
+                    </option>
+                    <option value="rodenticides" class="categories__item">
+                        Rodenticides (13)
+                    </option>
+                    <option value="retardants" class="categories__item">
+                        Retardants (233)
+                    </option>
+                </select>
+                <form class="filter">
+                    <fieldset class="fieldset">
+                        <legend class="visually-hidden">Manufacturer</legend>
+                        <p class="filter__title-manufacturer">Manufacturer</p>
+                        <ul class="list filter__manufacturer">
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"nertus", "text": "Nertus" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"basf", "text": "Basf" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"adam ukraine", "text": "Adam Ukraine" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"bayer", "text": "Bayer" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"gzd", "text": "GZD" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"stefes", "text": "Stefes" })
+                            <!-- -- -->
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="fieldset">
+                        <legend class="visually-hidden">Culture</legend>
+
+                        <p class="filter__title-culture">Culture</p>
+
+                        <ul class="list filter__culture">
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"sunflower", "text": "Sunflower" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"corn", "text": "Corn" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"Wheat", "text": "Wheat" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"Barley", "text": "Barley" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"Turnip", "text": "Turnip" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"soy", "text": "Soy" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"Pea", "text": "Pea" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"beans", "text": "Beans" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"mustard", "text": "Mustard" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"peas", "text": "Peas" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"rye", "text": "Rye" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"bean", "text": "Bean " })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"clover", "text": "Clover" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"Kostrets/Kostrytsia", "text":
+                            "Kostrets/Kostrytsia" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"Alfalfa", "text": "Alfalfa" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"timothy", "text": "Timothy" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"triticale", "text": "Triticale" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"sugar-beet", "text": "Sugar beet" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"fodder-beet", "text": "Fodder beet" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"other", "text": "Other " })
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="fieldset">
+                        <legend class="visually-hidden">quantity</legend>
+                        <p>Quantity</p>
+                        <ul class="list">
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"1", "text": "1" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"2", "text": "2" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"3", "text": "3" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"4", "text": "4" })
+                            <!-- -- -->
+                            @@include(
+                            'checkbox-dat.html',
+                            { "name":"5", "text": "5" })
+                        </ul>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!-- block cards products -->
+            <section class="cards-prod__wrap">
+                <h2 class="visually-hidden">List product</h2>
+                <!-- list card product -->
+                <ul class="list cards-prod__list">
+                    @@for (var i = 0; i < 15; i++) {
+                    <li>
+                        @@include('card-prod.html',
+                        { "path_img" : "img/petunia.jpg", "alt" :
+                        "petunia", "name": "Petunia Sofistika F1 0", "state"
+                        :"instock" , "price" : "4", "unit" : "1", } )
+                    </li>
+
+                    }
+                </ul>
+
+                <!-- pagination-page -->
+            </section>
+        </div>
+        <!-- / catalog-prod-2  --->
+    </div>
+
+    <!-- /wrap-catalog -->
+
+    <section class="description desc__catalog-prod">
+        <div class="description__text-wrap container">
+            <h2 class="title description__title">Plant protection</h2>
+
+            <p>
+                Means of plant protection are divided into four main types:
+                mechanical, chemical, biological and agrotechnical. However, the
+                most rational thing is their simultaneous, correct combination.
+                The most common method is chemical. There are thousands of
+                different types of chemical protection products. But they should
+                not be confused, let alone combined with chemical fertilizers.
+                The methods of their influence on plants are completely
+                opposite.
+            </p>
+
+            <p>
+                It is necessary to know and distinguish chemical means of plant
+                protection. After all, these drugs have a strictly defined
+                object of influence (the causative agent of the disease, insect
+                pests, a species or family of weeds).
+            </p>
+
+            <p>
+                Poisonous chemicals do not tolerate negligence. This is the type
+                of drug that is not enough to simply dilute in water and spray
+                plants with it. If pesticides are used incorrectly, they can
+                harm you, the beneficial insects, and the crop.
+            </p>
+        </div>
+    </section>
+</main>
