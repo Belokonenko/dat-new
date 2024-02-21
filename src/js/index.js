@@ -1,10 +1,15 @@
-    // import hello from "./modules/hello";
-    // import module from "./modules/module.js"
-    // import {add, pi} from "./modules/math";
+"use strict";
+import buttonBurger from "./modules/button-burger";
+import order from "./modules/order";
+import sliders from "./modules/slider";
+import seeds from './modules/seeds';
+import navProd from './modules/nav-prod';
 
-// console.log("index page js");
-// console.log(`import const form modules >>> ${hello}`);
-// module();
-// console.log(add(1, 2));
-// console.log(pi);
+document.addEventListener("DOMContentLoaded", () => {
 
+    buttonBurger("dropdown-panel");
+    order();
+    sliders();
+    seeds()
+    navProd()
+});

@@ -1,0 +1,129 @@
+.about-us {
+    position: relative;
+    border: 1px solid blue;
+
+    &__decor-ellipse-0-0 {
+        position: absolute;
+        right: 0px;
+        transform: translateX(50%);
+    }
+    &__decor-ellipse-0-1 {
+        position: absolute;
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    &__container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 100px 20px;
+        max-width: 1350px;
+        margin: 0 auto;
+        background-color: transparent;
+        border: 1px solid red;
+    }
+
+    &__text-wrap {
+        padding-left: 20%;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 5px;
+    }
+
+    &__btn {
+        margin-top: 50px;
+    }
+
+    //--- img ---
+
+    &__img-wrap {
+        display: flex;
+        position: relative;
+        align-self: start;
+        background-color: transparent;
+    }
+
+    &__img {
+        border-radius: 0 48% 0 45%;
+    }
+
+    &__leaf1 {
+        position: absolute;
+        width: 35%;
+        left: -10%;
+        bottom: 13%;
+    }
+    &__leaf2 {
+        position: absolute;
+        width: 25%;
+        left: 10%;
+        bottom: -3%;
+    }
+
+    //--- /img ---
+}
+
+// ---  adaptive ---
+
+// @media (max-width: 1440px) {
+// }
+// @media (max-width: 1024px) {
+// }
+@media (max-width: 992px) {
+    .about-us {
+        &__container {
+            grid-template-columns: 1fr;
+            grid-template-rows: max-content max-content;
+        }
+
+        &__text-wrap {
+            padding: 0;
+        }
+
+        &__title {
+            margin-top: 30px;
+        }
+
+        &__img-wrap {
+            width: 80%;
+            justify-self: center;
+        }
+
+        &__img {
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        &__container {
+        }
+
+        &__text-wrap {
+        }
+
+        &__title {
+        }
+
+        &__img-wrap {
+            width: 100%;
+        }
+
+        &__img {
+        }
+    }
+}
+// @media (max-width: 425px) {
+// }
+// @media (max-width: 375px) {
+// }
+// @media (max-width: 320px) {
+//}
+
+// ---  /adaptive ---

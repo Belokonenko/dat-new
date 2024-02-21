@@ -1,0 +1,35 @@
+$pag-item-mar-r: 30px;
+$panel-h: 25%;
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pagination__item:not(:last-child) {
+    position: relative;
+    margin-right: $pag-item-mar-r;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: calc(($pag-item-mar-r / 2) * -1);
+        transform: translate(50%, -50%);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--color-main-light);
+    }
+}
+
+.pagination__ref {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.15rem;
+    font-weight: 400;
+
+    &_active {
+        font-weight: 700;
+    }
+}

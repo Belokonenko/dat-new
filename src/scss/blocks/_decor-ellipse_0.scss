@@ -1,0 +1,43 @@
+.decor-ellipse_0 {
+    position: absolute;
+    width: 713px;
+    height: 713px;
+    border-radius: 713px;
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(231, 78, 19, 0.1) 0%,
+        rgba(231, 78, 19, 0) 100%
+    );
+    // filter: blur(30px);
+    border: 1px solid red;
+    
+    // ---  adaptive ---
+
+    // //desctop
+
+    // @media (max-width: 1440px) {
+    // }
+    // @media (max-width: 1270px) {
+    // }
+    // @media (max-width: 1024px) {
+    // }
+
+    // //tablet
+
+    @media (max-width: 992px) {
+        width: 70%;
+    }
+    // @media (max-width: 768px) {
+    // }
+
+    // //phones
+
+    // @media (max-width: 425px) {
+    // }
+    // @media (max-width: 375px) {
+    // }
+    // @media (max-width: 320px) {
+    //}
+
+    // ---  /adaptive ---
+}
