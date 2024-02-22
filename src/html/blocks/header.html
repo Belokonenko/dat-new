@@ -21,12 +21,12 @@
 
         <!-- order -->
 
-        <div class="order header__order">
+        <div class="order header__order  hidden-mobile">
             <div class="round-button">
                 @@include('button-round.html', {"id":"phone", "theme": "button_theme_dark"})
             </div>
 
-            <div class="order__wrap">
+            <div class="order__wrap ">
                 <div class="order__tel-block">
                     <a
                         class="button order__tel-ref order__tel-menu"
@@ -65,12 +65,11 @@
             </div>
         </div>
 
-        <!-- order -->
 
         @@include('button-round.html',
         {"id":"scale", "theme": "button_theme_dark"})
 
-        <div class="header__like-wrap">
+        <div class="header__like-wrap hidden-mobile">
             <button
                 class="button button_round button-round button_theme_dark"
             >
