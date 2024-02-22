@@ -63,7 +63,7 @@ gulp.task("sass:dev", function () {
 });
 
 gulp.task("images:dev", function () {
-    return gulp.src("./src/img/**.*")
+    return gulp.src("./src/img/**/**.*")
         .pipe(changed("./build/img/"))
         
         .pipe(imagemin({verbose: true}))
