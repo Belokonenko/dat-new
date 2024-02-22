@@ -3,18 +3,20 @@
     @@include('blocks/head.html', {"name" : "DAT", "pathicon" : "img/logo.svg"})
 
     <body class="page-body">
-        
         @@include('blocks/svg-sprites.html')
-        
 
         @@include('blocks/header.html')
 
-        <main class="content">
-            <!-- @@include('blocks/banner.html') @@include('blocks/about-us.html') -->
-            <!-- @@include('blocks/novelties.html') @@include('blocks/stock.html') -->
-            <!-- @@include('blocks/partners.html') @@include('blocks/seeds.html') -->
+ 
+        <main class="main">
+            @@include('blocks/banner.html') 
+            @@include('blocks/about-us.html')
+            @@include('blocks/novelties.html') 
+            @@include('blocks/stock.html')
+            @@include('blocks/partners.html') 
+            @@include('blocks/seeds.html')
+        
         </main>
-
         @@include('blocks/footer.html')
         
         <script src="js/index.bundle.js"></script>

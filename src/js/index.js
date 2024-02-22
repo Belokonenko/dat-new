@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     buttonBurger("dropdown-panel");
     order();
-    // sliders();
-    // seeds()
-    // navProd()
+    sliders();
+    seeds()
+    navProd()
 });
