@@ -5,7 +5,7 @@
     box-sizing: border-box;
 
     @include responsive-background-image("../img/banner-img-1/b_1");
-   
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left bottom;
@@ -21,174 +21,127 @@
     //         rgba(255, 255, 255, 1)
     //     );
     // }
-}
 
+    &__title {
+        position: relative;
 
-.banner__title {
-    position: relative;
-
-
-    &::before {
-        content: "";
-        position: absolute;
-        left: -40px;
-        top: 24px;
-        width: 32px;
-        height: 25px;
-
-        background-image: url(../img/leaf.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
-.banner__inner {
-    display: grid;
-    align-content: center;
-    justify-content: start;
-    height: 100%;
-    background-color: pink;
-
-}
-
-.banner__m-l {
-    margin-left: 44px;
-}
-
-.banner__sub-title {
-    font-weight: 300;
-}
-
-.banner__desc {
-    max-width: min(561px, 50%);
-    margin-bottom: 23px;
-}
-
-// --- /text ---
-
-// --- image ---
-
-.banner__wraper-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 80vh;
-    width: 45vw;
-    aspect-ratio: 1/ 0.86;
-    background-size: cover;
-    background-position: center;
-    @include responsive-background-image("../img/banner-img-2/b-2");
-}
-
-.banner__image {
-    max-height: 80vh;
-    height: auto;
-    width: 100%;
-    border-radius: 45% 0 45% 0;
-    object-fit: cover;
-    object-position: top;
-}
-
-// --- image ---
-
-.banner__leaf1 {
-    position: absolute;
-    left: -18%;
-    bottom: 16%;
-    width: 30%;
-}
-.banner__leaf2 {
-    position: absolute;
-    left: -14%;
-    bottom: 11%;
-    width: 20%;
-}
-
-.banner__leaf3 {
-    position: absolute;
-    right: 2%;
-    top: 0;
-    width: 30%;
-    transform: translateY(-60%) scaleX(-1);
-}
-
-//// ---  adaptive ---
-
-@media (max-width: 1620px) {
-}
-
-@media (max-width: 1440px) {
-}
-
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 992px) {
-    .banner__inner {
-        padding-top: 200px;
-        padding-bottom: 0;
-        align-content: auto;
-    }
-
-    .banner__title {
-        margin-top: 0px;
-        margin-bottom: 0px;
         &::before {
+            content: "";
+            position: absolute;
             left: -40px;
-            top: 20px;
+            top: 24px;
             width: 32px;
             height: 25px;
+
+            background-image: url(../img/leaf.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @include tablet {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            &::before {
+                left: -40px;
+                top: 20px;
+                width: 32px;
+                height: 25px;
+            }
         }
     }
-    .banner__desc {
-        max-width: 70%;
+
+    &__inner {
+        display: grid;
+        align-content: center;
+        justify-content: start;
+        height: 100%;
+        background-color: pink;
+
+        @include tablet {
+            padding-top: 200px;
+            padding-bottom: 0;
+            align-content: auto;
+        }
     }
 
-    .banner__button {
-        order: 1;
-        margin: 40px 0;
-        justify-self: center;
+    &__m-l {
+        margin-left: 44px;
     }
 
-    .banner__wraper-image {
-        position: relative;
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 600px) {
-    .banner__desc {
-        max-width: 100%;
+    &__sub-title {
+        font-weight: 300;
     }
 
-    // .banner {
-    //     background-image: url(../img/banner-mob.jpg);
-    //     background-size: cover;
-    //     background-position: 50% 50%;
+    &__desc {
+        max-width: min(561px, 50%);
+        margin-bottom: 23px;
+
+        @include tablet {
+            max-width: 70%;
+        }
+
+        @include phone-l {
+            max-width: 100%;
+        }
+    }
+    &__button {
+        @include tablet {
+            order: 1;
+            margin: 40px 0;
+            justify-self: center;
+        }
+    }
+
+    // --- /text ---
+
+    // --- image ---
+
+    &__wraper-image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 80vh;
+        width: 45vw;
+        aspect-ratio: 1/ 0.86;
+        background-size: cover;
+        background-position: center;
+
+        @include responsive-background-image("../img/banner-img-2/b-2");
+        @include tablet {
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    // &__image {
+    //     max-height: 80vh;
+    //     height: auto;
+    //     width: 100%;
+    //     border-radius: 45% 0 45% 0;
+    //     object-fit: cover;
+    //     object-position: top;
     // }
+
+    // --- image ---
+
+    &__leaf1 {
+        position: absolute;
+        left: -18%;
+        bottom: 16%;
+        width: 30%;
+    }
+    &__leaf2 {
+        position: absolute;
+        left: -14%;
+        bottom: 11%;
+        width: 20%;
+    }
+
+    &__leaf3 {
+        position: absolute;
+        right: 2%;
+        top: 0;
+        width: 30%;
+        transform: translateY(-60%) scaleX(-1);
+    }
 }
-
-@media (max-width: 425px) {
-    // .banner {
-    // }
-    // .banner__sub-title {
-    //     font-size: 1.563rem;
-    //     margin-bottom: 20px;
-    // }
-
-    // .banner__container {
-    //     padding-left: calc($indentation - 30px);
-    //     padding-right: calc($indentation - 30px);
-    // }
-}
-
-@media (max-width: 375px) {
-}
-
-@media (max-width: 320px) {
-}
-
-//--- /adaptive ---
