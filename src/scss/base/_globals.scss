@@ -13,7 +13,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    padding-top: var(--header-min-height);
+    // padding-top: var(--header-min-height);
    
     display: grid;
     grid-template-columns: 1fr;
@@ -31,6 +31,7 @@
 
 .main {
     overflow: hidden;
+    min-height: var(--header-min-height);
 }
 
 a, 
