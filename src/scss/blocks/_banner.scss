@@ -52,10 +52,11 @@
 
     &__inner {
         display: grid;
+        height: 100%;
         align-content: center;
         justify-content: start;
-        height: 100%;
-        background-color: pink;
+        overflow: hidden;
+
 
         @include tablet {
             padding-top: 200px;
@@ -100,6 +101,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        border-radius:  40% 0px 40% 0px / 40% 0px 40% 0px ;
         max-width: 80vh;
         width: 45vw;
         aspect-ratio: 1/ 0.86;
@@ -109,8 +111,11 @@
         @include responsive-background-image("../img/banner-img-2/b-2");
         @include tablet {
             position: relative;
-            width: 100%;
+            width: 100vw;
+            max-width: 60vh;
+            margin-inline: auto;
         }
+
     }
 
     // &__image {
