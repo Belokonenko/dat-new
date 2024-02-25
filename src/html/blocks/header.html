@@ -14,19 +14,30 @@
                 />
 
                 <button class="button search__button" type="search">
-                    <span>search</span>
+                    <span class="visually-hidden">search</span>
+
+                    <svg
+                        class="search__img"
+                        width="15"
+                        height="15"
+                        alt=""
+                        aria-hidden="true"
+                    >
+                        <use xlink:href="#search"></use>
+                    </svg>
                 </button>
             </form>
         </div>
 
         <!-- order -->
 
-        <div class="order header__order  hidden-mobile">
+        <div class="order header__order hidden-mobile">
             <div class="round-button">
-                @@include('button-round.html', {"id":"phone", "theme": "button_theme_dark"})
+                @@include('button-round.html', {"id":"phone", "theme":
+                "button_theme_dark"})
             </div>
 
-            <div class="order__wrap ">
+            <div class="order__wrap">
                 <div class="order__tel-block">
                     <a
                         class="button order__tel-ref order__tel-menu"
@@ -65,14 +76,11 @@
             </div>
         </div>
 
-
-        @@include('button-round.html',
-        {"id":"scale", "theme": "button_theme_dark"})
+        @@include('button-round.html', {"id":"scale", "theme":
+        "button_theme_dark"})
 
         <div class="header__like-wrap hidden-mobile">
-            <button
-                class="button button_round button-round button_theme_dark"
-            >
+            <button class="button button_round button-round button_theme_dark">
                 <svg class="button-round__img heart" width="16" height="16">
                     <use xlink:href="#heart"></use>
                 </svg>
@@ -80,13 +88,11 @@
         </div>
 
         <div class="basket">
-            @@include('button-round.html',
-            {"id":"basket", "theme": "button_theme_dark"})
+            @@include('button-round.html', {"id":"basket", "theme":
+            "button_theme_dark"})
             <span class="basket__price"> 0.0$ </span>
         </div>
     </div>
 
-    @@include('nav-prod.html')
-
-    @@include('dropdown-panel.html')
+    @@include('nav-prod.html') @@include('dropdown-panel.html')
 </header>

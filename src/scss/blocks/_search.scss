@@ -1,60 +1,56 @@
 .search {
-}
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        height: 40px;
+        border-radius: 90px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 
-.search__form {
-    display: grid;
-    grid-template-columns: 1fr 70px;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    border-radius: 90px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background: #fff;
-    margin-right: 10px;
-    margin-left: 10px;
-}
+    &__input {
+        border: 3px solid #fff;
+        border-right: none;
+        margin-left: 10px;
+        height: 20px;
+        min-width: 20px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: var(--color-text-dark);
+    }
 
-.search__input {
-    border: 3px solid #fff;
-    border-right: none;
-    padding: 5px;
-    margin-left: 10px;
-    height: 20px;
-    min-width: 20px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    color: var(--color-text-dark);
-}
+    &__input:focus {
+        color: var(--color-text-dark);
+    }
 
-.search__input:focus {
-    color: var(--color-text-dark);
-}
-
-.search__button {
-    position: relative;
-    height: 35px;
-    border: none;
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-    background: transparent;
-    text-align: center;
-    color: #fff;
-    border-radius: 0 10px 10px 0;
-    cursor: pointer;
-    font-size: 20px;
-    // background-color: red;
-}
-
-.search__button::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
+    &__button {
+        position: relative;
+        height: 35px;
+        border-radius: 90px;
+        cursor: pointer;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+    }
     
-    width: 20px;
-    height: 20px;
-    background-image: url('../img/search.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+    &__img {
+        fill: var(--color-main-light);
+        height: 15px;
+        width: 15px;
+    }
 
+    &__button::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 1px;
+        height: 90%;
+        // translate: 0 -50%;
+        
+    }
+}

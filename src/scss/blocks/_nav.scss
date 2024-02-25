@@ -1,77 +1,79 @@
 .nav {
-}
-.nav__list {
-    display: flex;
-    height: 100%;
-}
+    @include tablet {
+        display: none;
+    }
 
-.nav__item {
-    flex-grow: 1;
-    height: var(--top-min-height);
-}
+    &__list {
+        display: flex;
+        height: 100%;
+    }
 
-.nav__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: var(--color-text-light);
-    font-weight: 300;
-    background-color: var(--color-main);
-}
+    &__item {
+        flex-grow: 1;
+        height: var(--top-min-height);
+    }
 
-.nav__button:hover {
-    background: var(--color-epsilon);
-}
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: var(--color-text-light);
+        font-weight: 300;
+        background-color: var(--color-main);
+    }
 
-.nav__button:focus-visible {
-    background: var(--color-epsilon);
-}
+    &__button:hover {
+        background: var(--color-epsilon);
+    }
 
-.nav__button-text{
-    display: flex;
-    align-items: center;
-}
-.nav__button-text::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-image: url('../img/arr-menu.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-left: 10px;
-    transition: all .3s ease;
-}
+    &__button:focus-visible {
+        background: var(--color-epsilon);
+    }
 
-.nav__button:hover .nav__button-text::after {
-    transform: rotate(180deg);
+    &__button-text {
+        display: flex;
+        align-items: center;
+    }
+    &__button-text::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-image: url("../img/arr-menu.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 10px;
+        transition: all 0.3s ease;
+    }
+
+    &__button:hover .nav__button-text::after {
+        transform: rotate(180deg);
+    }
+
+    &__btn-menu:hover .drop-menu {
+        height: calc(var(--top-min-height) * 3);
+    }
+
+    &__btn-menu:focus-within .drop-menu {
+        height: calc(var(--top-min-height) * 3);
+    }
 }
 
 // drop-menu
-
 .drop-menu {
     position: absolute;
     height: 0;
     width: 200px;
     overflow: hidden;
-    transition: height 0.5s ease; /* Анимация высоты на 0.5 секунды */ 
+    transition: height 0.5s ease; /* Анимация высоты на 0.5 секунды */
+    border-radius: 0 0 20px 20px;
 }
 
 .drop-menu__button {
     justify-content: start;
     padding-left: 30px;
 }
-
-.nav__btn-menu:hover  .drop-menu {
-    height: calc(var(--top-min-height) * 3);
-}
-
-.nav__btn-menu:focus-within .drop-menu {
-    height: calc(var(--top-min-height) * 3);
-}
-
-
 // ---  adaptive ---
 
 //desctop
@@ -86,9 +88,6 @@
 //tablet
 
 @media (max-width: 992px) {
-    .nav {
-        display: none;
-    }
 }
 @media (max-width: 768px) {
 }
