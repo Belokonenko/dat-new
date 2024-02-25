@@ -1,90 +1,70 @@
 .order {
-    display: grid;
-    grid-template-columns: max-content max-content;
-    grid-template-rows: max-content;
-    column-gap: 8px;
-    margin-right: 10px;
-    justify-self: center;
     z-index: 0;
-}
-
-.order__wrap {
-    display: grid;
-}
-
-.order__tel-block {
-    z-index: 1;
-
-}
-.order__list {
-    border-radius: .2rem;
-}
-
-.order__tel-ref {
-    color: var(--color-text-dark);
-    font-weight: 300;
-    &:hover {
-        color: var(--color-accent);
-    }
-}
-
-.order__tel-rer:hover .order__tel-ref::after {
-    transform: rotate(180deg);
-}
-
-.order__tel-menu {
-    display: flex;
     position: relative;
-    font-weight: 400;
-
-    &::after {
-        content: url('../img/arr-menu.svg');
-        margin-left: 5px;
-        transition: 0.3s ease;
-    }
-}
-
-.order__list {
-    position: absolute;
-    transform: scaleY(0);
-    transition: 0.3s ease;
-    transform-origin: top;
-    background-color: var(--color-bg-alpha);
-
-    &--active {
-        transform: scale(1);
-    }
-}
-
-.order__text {
-    position: relative;
-    color: var(--color-main-light);
-
-    &::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
+    height: 60px;
+    width: 270px;
+    border-radius: 20px;
+    
+    &__inner {
+        position: relative;
+        display: grid;
+        gap:  0 5px;
         width: 100%;
-        height: 1px;
-        color: var(--color-main-light);
-    }
-}
+        height: 100%;
+        grid-template-columns: max-content max-content;
+        grid-auto-rows: min-content;
+        border-radius: 20px;
+        padding: 10px;
+        
+        &:hover .order__list {
+            display: block; 
+        }
+        
+        @include hover {
+            position: absolute;
+            box-shadow: var(--shadow);
+            height: 130px;
+            background-color: var(--color-bg-alpha);
+        }
 
-@media (max-width: 1440px) {
-}
-@media (max-width: 1024px) {
-}
-@media (max-width: 992px) {
-    .order {
-        justify-self: end;
+        @include tablet {
+            justify-self: end;
+        }
+
+
     }
-}
-@media (max-width: 768px) {
-}
-@media (max-width: 425px) {
-}
-@media (max-width: 375px) {
-}
-@media (max-width: 320px) {
+    &__btn-wrap {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        align-self: center;
+    }
+
+    &__text {
+        position: relative;
+        grid-column: 2/-1;
+        color: var(--color-main-light);
+
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 1px;
+            color: var(--color-main-light);
+        }
+    }
+
+    &__list {
+        display: none;
+        grid-column: 2/-1;
+    }
+
+    &__tel {
+        color: var(--color-text-dark);
+        font-weight: 300;
+        &:hover {
+            color: var(--color-accent);
+        }
+    }
 }

@@ -12,7 +12,11 @@
                     placeholder="Search..."
                 />
 
-                <button class="button search__button" type="search" title="search">
+                <button
+                    class="button search__button"
+                    type="search"
+                    title="search"
+                >
                     <span class="visually-hidden">search</span>
 
                     <svg
@@ -29,10 +33,11 @@
         </div>
 
         <!-- order -->
-        <br>
+        <br />
+
         <div class="order header__order hidden-mobile">
-            <li>
-                <a href="tel:+380671150058">
+            <div class="order__inner">
+                <a class="order__btn-wrap" href="tel:+380671150058">
                     <button
                         class="
                             button button_round button-round button_theme_dark
@@ -51,29 +56,26 @@
                         </svg>
                     </button>
                 </a>
-            </li>
-            <li>
-                <a class="order__text" href="#">Order a call back</a>
-            </li>
-            <li>
-                <a
-                    class="button order__tel-ref order__tel-menu"
-                    href="tel:+380671150058"
+                <a class="button order__tel" href="tel:+380671150058"
                     >+38 (067) 115 00 58
                 </a>
-            </li>
-            <li>
-                <a class="button order__tel-ref" href="tel:+380671150058"
-                    >+38 (067) 115 00 57</a
-                >
-            </li>
-            <li>
-                <a class="button order__tel-ref" href="tel:+380671150058"
-                    >+38 (067) 115 00 56</a
-                >
-            </li>
+                <a class="order__text" href="#">Order a call back</a>
+
+                <ul class="order__list">
+                    <li class="order__item">
+                        <a class="button order__tel" href="tel:+380671150057"
+                            >+38 (067) 115 00 57
+                        </a>
+                    </li>
+                    <li class="order__item">
+                        <a class="button order__tel" href="tel:+380671150056"
+                            >+38 (067) 115 00 56
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <br>
+        <br />
         <button
             class="button button_round button-round button_theme_dark"
             title="View comparison list"
@@ -89,7 +91,7 @@
                 <use xlink:href="#scale"></use>
             </svg>
         </button>
-        <br>
+        <br />
         <button
             class="
                 button button_round button-round button_theme_dark
