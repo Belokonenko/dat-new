@@ -1,11 +1,12 @@
 .dropdown-panel {
     position:fixed;
     top:-250%;
-    background-color: var(--color-main);
-    padding-top: calc(var(--top-min-height));
+    display: block;
     width: 100%;
     min-height: 600px;
     height: calc(100vh - var(--top-min-height));
+    background-color: var(--color-main);
+    padding-top: calc(var(--top-min-height));
     transition: all 1s ease;
 }
 
