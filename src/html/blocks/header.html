@@ -2,42 +2,15 @@
     @@include('top.html')
 
     <div class="header__sub container">
+        
         @@include('logo.html',{"path":"img/Svg/Logo.svg"})
-        <div class="search header__search">
-            <form class="search__form" method="GET">
-                <input
-                    class="search__input"
-                    type="text"
-                    name="query"
-                    placeholder="Search..."
-                />
 
-                <button
-                    class="button search__button"
-                    type="search"
-                    title="search"
-                >
-                    <span class="visually-hidden">search</span>
-
-                    <svg
-                        class="search__img"
-                        width="15"
-                        height="15"
-                        alt=""
-                        aria-hidden="true"
-                    >
-                        <use xlink:href="#search"></use>
-                    </svg>
-                </button>
-            </form>
-        </div>
+        @@include('search.html')
 
         <!-- order -->
-        <br />
 
         @@include('./order.html')
 
-        <br />
         <button
             class="button button_round button-round button_theme_dark"
             title="View comparison list"
@@ -53,7 +26,6 @@
                 <use xlink:href="#scale"></use>
             </svg>
         </button>
-        <br />
         <button
             class="
                 button button_round button-round button_theme_dark
