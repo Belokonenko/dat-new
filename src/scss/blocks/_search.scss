@@ -21,10 +21,15 @@
         margin-left: 10px;
         color: var(--color-text-dark);
         outline: none;
+        
+        font-weight: 400;
+        color: #484848;
+        background-color: transparent;
     }
 
     &__input:focus {
         color: var(--color-text-dark);
+        background-color: transparent;
     }
 
     &__button {
