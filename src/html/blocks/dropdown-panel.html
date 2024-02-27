@@ -49,78 +49,135 @@
         </div>
 
         <!-- order -->
-        <div class="order dropdown-panel__order">
-            <div class="round-button">
-                @@include('button-round.html', {"id":"phone",
-                "theme":"button_theme_light"})
-            </div>
-
-            <div class="order__wrap">
-                <div class="order__tel-block">
-                    <a
+        <div class="order">
+            <div class="order__inner order__inner_theme_light">
+                <a class="order__btn-wrap" href="tel:+380671150058">
+                    <button
                         class="
-                            button
-                            order__tel-ref order__tel-menu
-                            dropdown-panel__tel
+                            button button_round button-round button_theme_light
                         "
-                        href="tel:+380671150058"
-                        >+38 (067) 115 00 58</a
+                        title="Call us now"
                     >
-
-                    <ul class="list order__list dropdown-panel__list">
-                        <li>
-                            <a
-                                class="
-                                    button
-                                    order__tel-ref
-                                    dropdown-panel__tel
-                                "
-                                href="tel:+380671150058"
-                                >+38 (067) 115 00 57</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="
-                                    button
-                                    order__tel-ref
-                                    dropdown-panel__tel
-                                "
-                                href="tel:+380671150058"
-                                >+38 (067) 115 00 56</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="
-                                    button
-                                    order__tel-ref
-                                    dropdown-panel__tel
-                                "
-                                href="tel:+380671150058"
-                                >+38 (067) 115 00 55</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="
-                                    button
-                                    order__tel-ref
-                                    dropdown-panel__tel
-                                "
-                                href="tel:+380671150058"
-                                >+38 (067) 115 00 55</a
-                            >
-                        </li>
-                    </ul>
-                </div>
+                        <span class="visually-hidden">Call us now</span>
+                        <svg
+                            class="button-round__img phone"
+                            width="16"
+                            height="16"
+                            aria-hidden="true"
+                            alt=""
+                        >
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                    </button>
+                </a>
 
                 <div>
-                    <a class="button order__text" href="#">Order a call back</a>
+                    <a class="button order__tel" href="tel:+380671150058"
+                        >+38 (067) 115 00 58
+                    </a>
+
+                    <button class="button order__button" type="button">
+                        <svg
+                            class="order__arr-menu"
+                            width="10"
+                            height="10"
+                            aria-hidden="true"
+                            alt=""
+                        >
+                            <use xlink:href="#arr-menu"></use>
+                        </svg>
+                    </button>
                 </div>
+
+                <a class="order__text" href="#">Order a call back</a>
+
+                <ul class="order__list">
+                    <li class="order__item">
+                        <a class="button order__tel" href="tel:+380671150057"
+                            >+38 (067) 115 00 57
+                        </a>
+                    </li>
+
+                    <li class="order__item">
+                        <a class="button order__tel" href="tel:+380671150056"
+                            >+38 (067) 115 00 56
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- /order -->
+
+        <!-- <div class="order dropdown-panel__order"> -->
+        <!--     <div class="round-button"> -->
+        <!--         @@include('button-round.html', {"id":"phone", -->
+        <!--         "theme":"button_theme_light"}) -->
+        <!--     </div> -->
+
+        <!--     <div class="order__wrap"> -->
+        <!--         <div class="order__tel-block"> -->
+        <!--             <a -->
+        <!--                 class=" -->
+        <!--                     button -->
+        <!--                     order__tel-ref order__tel-menu -->
+        <!--                     dropdown-panel__tel -->
+        <!--                 " -->
+        <!--                 href="tel:+380671150058" -->
+        <!--                 >+38 (067) 115 00 58</a -->
+        <!--             > -->
+
+        <!--             <ul class="list order__list dropdown-panel__list"> -->
+        <!--                 <li> -->
+        <!--                     <a -->
+        <!--                         class=" -->
+        <!--                             button -->
+        <!--                             order__tel-ref -->
+        <!--                             dropdown-panel__tel -->
+        <!--                         " -->
+        <!--                         href="tel:+380671150058" -->
+        <!--                         >+38 (067) 115 00 57</a -->
+        <!--                     > -->
+        <!--                 </li> -->
+        <!--                 <li> -->
+        <!--                     <a -->
+        <!--                         class=" -->
+        <!--                             button -->
+        <!--                             order__tel-ref -->
+        <!--                             dropdown-panel__tel -->
+        <!--                         " -->
+        <!--                         href="tel:+380671150058" -->
+        <!--                         >+38 (067) 115 00 56</a -->
+        <!--                     > -->
+        <!--                 </li> -->
+        <!--                 <li> -->
+        <!--                     <a -->
+        <!--                         class=" -->
+        <!--                             button -->
+        <!--                             order__tel-ref -->
+        <!--                             dropdown-panel__tel -->
+        <!--                         " -->
+        <!--                         href="tel:+380671150058" -->
+        <!--                         >+38 (067) 115 00 55</a -->
+        <!--                     > -->
+        <!--                 </li> -->
+        <!--                 <li> -->
+        <!--                     <a -->
+        <!--                         class=" -->
+        <!--                             button -->
+        <!--                             order__tel-ref -->
+        <!--                             dropdown-panel__tel -->
+        <!--                         " -->
+        <!--                         href="tel:+380671150058" -->
+        <!--                         >+38 (067) 115 00 55</a -->
+        <!--                     > -->
+        <!--                 </li> -->
+        <!--             </ul> -->
+        <!--         </div> -->
+
+        <!--         <div> -->
+        <!--             <a class="button order__text" href="#">Order a call back</a> -->
+        <!--         </div> -->
+        <!--     </div> -->
+        <!-- </div> -->
     </div>
 
     <!-- decore line -->
