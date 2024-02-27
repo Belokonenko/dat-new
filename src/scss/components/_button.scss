@@ -117,13 +117,29 @@
         &:hover {
             background-color: var(--color-accent-dark);
         }
-        
+
         .button-round__img {
             fill: var(--color-accent-dark);
         }
-        
+
         &:hover .button-round__img {
             fill: var(--color-text-light);
+        }
+    }
+
+    &_theme_light {
+        border-color: var(--color-text-light);
+
+        &:hover {
+            background-color: var(--color-text-light);
+        }
+
+        .button-round__img {
+            fill: var(--color-text-light);
+        }
+
+        &:hover .button-round__img {
+            fill: var(--color-main);
         }
     }
 }

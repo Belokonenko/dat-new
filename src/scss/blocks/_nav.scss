@@ -5,7 +5,10 @@
 
     &__list {
         display: flex;
+        align-content:stretch;
         height: 100%;
+        width: 100%;
+
     }
 
     &__item {
@@ -14,7 +17,8 @@
     }
 
     &__button {
-        display: flex;
+        display: inline-flex;
+        gap: 5px;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -33,22 +37,7 @@
     }
 
     &__button-text {
-        display: flex;
-        align-items: center;
-    }
-    &__button-text::after {
-        content: "";
-        width: 10px;
-        height: 10px;
-        background-image: url("../img/arr-menu.svg");
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin-left: 10px;
-        transition: all 0.3s ease;
-    }
-
-    &__button:hover .nav__button-text::after {
-        transform: rotate(180deg);
+        line-height: 0;
     }
 
     &__btn-menu:hover .drop-menu {
@@ -57,6 +46,19 @@
 
     &__btn-menu:focus-within .drop-menu {
         height: calc(var(--top-min-height) * 3);
+    }
+    &__btn-menu:hover .nav__arr-menu {
+        rotate: 180deg;
+    }
+
+    &__btn-menu:focus-within .nav__arr-menu {
+        rotate: 180deg;
+    }
+
+    &__arr-menu {
+        fill: var(--color-text-light);
+        transition: var(--transition-duration);
+        align-self: center;
     }
 }
 

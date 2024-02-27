@@ -40,6 +40,10 @@
         text-align: center;
         color: #fff;
         font-size: 20px;
+        background-image: url('../../img/Svg/search.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 30%;
         &::before {
             content: "";
             position: absolute;
@@ -49,6 +53,7 @@
             height: 25px;
             width: 1px;
             background-color: rgba(0, 0, 0, 0.2);
+
         }
     }
 

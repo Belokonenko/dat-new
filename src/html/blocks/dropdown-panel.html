@@ -1,13 +1,16 @@
-<section class="dropdown-panel" hidden>
+<div class="dropdown-panel" hidden>
     <div class="container dropdown-panel__container">
         <a class="button logo dropdown-panel__logo" href="index.html">
-            <img class="logo__img" src="./img/logo_white.svg" alt="logo" />
+            <img class="logo__img" src="./img/Svg/Logo-white.svg" alt="logo" />
         </a>
 
         <button
-            class="button button_round button-round button_theme_light dropdown-panel__scale"
+            class="
+                button button_round button-round button_theme_light
+                dropdown-panel__scale
+            "
         >
-            <svg class="button-round__img"  width="16" height="16">
+            <svg class="button-round__img" width="16" height="16">
                 <use xlink:href="#scale"></use>
             </svg>
         </button>
@@ -21,9 +24,12 @@
         <!-- === -->
 
         <button
-            class="button button_round button-round button_theme_light dropdown-panel__heart"
+            class="
+                button button_round button-round button_theme_light
+                dropdown-panel__heart
+            "
         >
-            <svg class="button-round__img heart"  width="16" height="16">
+            <svg class="button-round__img heart" width="16" height="16">
                 <use xlink:href="#heart"></use>
             </svg>
         </button>
@@ -33,11 +39,11 @@
                 <input
                     class="search__input"
                     type="text"
-                    name="query"
+                    name="search"
                     placeholder="Search..."
                 />
-                <button class="button search__button" type="button">
-                    <span>search</span>
+                <button class="button search__button" type="submit">
+                    <span class="visually-hidden">search</span>
                 </button>
             </form>
         </div>
@@ -45,14 +51,18 @@
         <!-- order -->
         <div class="order dropdown-panel__order">
             <div class="round-button">
-                @@include('button-round.html',
-                {"id":"phone", "theme":"button_theme_light"})
+                @@include('button-round.html', {"id":"phone",
+                "theme":"button_theme_light"})
             </div>
 
             <div class="order__wrap">
                 <div class="order__tel-block">
                     <a
-                        class="button order__tel-ref order__tel-menu dropdown-panel__tel"
+                        class="
+                            button
+                            order__tel-ref order__tel-menu
+                            dropdown-panel__tel
+                        "
                         href="tel:+380671150058"
                         >+38 (067) 115 00 58</a
                     >
@@ -60,28 +70,44 @@
                     <ul class="list order__list dropdown-panel__list">
                         <li>
                             <a
-                                class="button order__tel-ref dropdown-panel__tel"
+                                class="
+                                    button
+                                    order__tel-ref
+                                    dropdown-panel__tel
+                                "
                                 href="tel:+380671150058"
                                 >+38 (067) 115 00 57</a
                             >
                         </li>
                         <li>
                             <a
-                                class="button order__tel-ref dropdown-panel__tel"
+                                class="
+                                    button
+                                    order__tel-ref
+                                    dropdown-panel__tel
+                                "
                                 href="tel:+380671150058"
                                 >+38 (067) 115 00 56</a
                             >
                         </li>
                         <li>
                             <a
-                                class="button order__tel-ref dropdown-panel__tel"
+                                class="
+                                    button
+                                    order__tel-ref
+                                    dropdown-panel__tel
+                                "
                                 href="tel:+380671150058"
                                 >+38 (067) 115 00 55</a
                             >
                         </li>
                         <li>
                             <a
-                                class="button order__tel-ref dropdown-panel__tel"
+                                class="
+                                    button
+                                    order__tel-ref
+                                    dropdown-panel__tel
+                                "
                                 href="tel:+380671150058"
                                 >+38 (067) 115 00 55</a
                             >
@@ -96,7 +122,7 @@
         </div>
         <!-- /order -->
     </div>
-    
+
     <!-- decore line -->
     <div class="container">
         <div class="dropdown-panel__dec-line"></div>
@@ -105,21 +131,26 @@
     <nav class="dropdown-panel__nav container">
         <ul class="list">
             <li class="item dropdown-panel__item">
-                <a class="button nav__button" href="#">About the company</a>
+                <a class="button nav__button" href="404.html"
+                    >About the company</a
+                >
             </li>
             <li class="item dropdown-panel__item">
-                <a class="button nav__button" href="#">Product</a>
+                <a class="button nav__button" href="404.html">Product</a>
             </li>
             <li class="item dropdown-panel__item">
-                <a class="button nav__button" href="#">Catalog</a>
+                <a class="button nav__button" href=" 404.html">Catalog</a>
             </li>
             <li class="item dropdown-panel__item">
-                <a class="button nav__button" href="#">Payment and delivery</a>
+                <a class="button nav__button" href="404.html"
+                    >Payment and delivery</a
+                >
             </li>
             <li class="item dropdown-panel__item">
-                <a class="button nav__button" href="#">Partners Contacts</a>
+                <a class="button nav__button" href="404.html"
+                    >Partners Contacts</a
+                >
             </li>
         </ul>
     </nav>
-
-</section>
+</div>

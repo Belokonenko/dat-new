@@ -1,39 +1,33 @@
-// * {
-//     outline: 5px solid rgba(244, 0, 0, 0.5);
-//     outline-offset: -5px;}
+* {
+    outline: 1px solid rgba(244, 0, 0, 0.5);
+    outline-offset: -1px;}
+
+
 .page-html {
     scroll-behavior: smooth;
     height: 100%;
-    background-color: var(--color-bg-light);
-    overflow-x: hidden;
 }
 
-
 .page-body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr max-content;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     
-    min-height: 100%;
-
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
 
-.img {
-    pointer-events: none;
-}
-
 .main {
     overflow: hidden;
+    flex-grow: 1;
     min-height: var(--header-min-height);
 }
+
 
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
-
 }
 
 a, 
@@ -83,9 +77,11 @@ html {
 /**
   Приводим к единому цвету svg-элементы
  */
+
 svg *[fill] {
     fill: currentColor;
 }
+
 svg *[stroke] {
     stroke: currentColor;
 }

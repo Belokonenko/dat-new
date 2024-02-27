@@ -50,6 +50,7 @@
     &__title {
         margin-bottom: 25px;
         line-height: 1;
+        padding-left: 5px;
     }
 
     &__mail-wrap {
@@ -58,6 +59,7 @@
         align-items: center;
         margin-top: 20px;
         gap: 10px;
+        padding: 5px;
     }
 
     &__mail {
@@ -97,15 +99,6 @@
         background-color: var(--color-main-light);
         border-radius: 50px 50px 0 0;
         margin: 0;
-        &::after {
-            content: url(../img/arrow-white.svg);
-            position: absolute;
-            left: 50%;
-            top: 20%;
-            transform: rotate(-90deg) translateY(-50%);
-            width: 20px;
-            height: 20px;
-        }
     }
 
     // --- /arrow ---

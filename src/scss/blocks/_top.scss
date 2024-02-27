@@ -1,10 +1,11 @@
 .top {
-    height: var(--top-min-height);
     position: fixed;
+    height: var(--top-min-height);
     width: 100%;
     min-height: var(--top-min-height);
     background-color: var(--color-main);
     z-index: 100;
+
 
     &__container {
         display: grid;
@@ -21,21 +22,6 @@
         margin: 0 20px;
     }
     // --- /dec line ---
-}
-
-// ---  menu ---
-.menu-btn {
-    position: relative;
-    display: flex;
-}
-
-.menu-btn::after {
-    content: url(../img/arr-menu.svg);
-    position: absolute;
-    display: flex;
-    right: -15px;
-    transform: rotate(180deg);
-    transition: 0.3s ease;
 }
 
 .menu {

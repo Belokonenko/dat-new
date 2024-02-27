@@ -2,9 +2,7 @@
     @@include('top.html')
 
     <div class="header__sub container">
-        
         @@include('logo.html',{"path":"img/Svg/Logo.svg"})
-
         @@include('search.html')
 
         <!-- order -->
@@ -26,6 +24,7 @@
                 <use xlink:href="#scale"></use>
             </svg>
         </button>
+
         <button
             class="
                 button button_round button-round button_theme_dark
@@ -43,10 +42,13 @@
                 <use xlink:href="#heart"></use>
             </svg>
         </button>
-
         <div class="basket">
             <button
-                class="button button_round basket__btn button-round button_theme_dark"
+                class="
+                    button button_round
+                    basket__btn
+                    button-round button_theme_dark
+                "
                 title="View items in cart"
             >
                 <span class="visually-hidden">View items in cart</span>
@@ -59,12 +61,10 @@
                 >
                     <use xlink:href="#basket"></use>
                 </svg>
-                
-                <span class="cart-count"><span class="cart-count__num">2</span></span>
             </button>
             <span class="basket__price"> 0.0$ </span>
         </div>
     </div>
 
-    @@include('nav-prod.html')
+    @@include('nav-prod.html') @@include('dropdown-panel.html')
 </header>

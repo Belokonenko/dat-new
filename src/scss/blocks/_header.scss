@@ -30,10 +30,13 @@
     translate: .5px 1px;
 }
 
+
 @media (max-width: 1440px) {
 }
+
 @media (max-width: 1024px) {
 }
+
 @media (max-width: 992px) {
     .header__sub {
         grid-template-columns: max-content 1fr repeat(3, max-content);

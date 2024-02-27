@@ -1,5 +1,6 @@
 .dropdown-panel {
     position:fixed;
+    z-index: 2;
     top:-250%;
     display: block;
     width: 100%;
