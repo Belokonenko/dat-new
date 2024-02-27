@@ -1,13 +1,17 @@
 .nav-prod {
+    transition: var(--transition-duration);
     
     @include tablet {
-        display: flex;
-        justify-content: center;
-        height: 40px;
+        height: 45px;
         overflow: hidden;
-        transition: all 0.3s ease;
-        background-color: transparent;
     }
+    
+    &_active {
+        @include tablet {
+        height: auto;
+        }
+    }
+
 
     &__list {
         display: grid;
@@ -18,13 +22,25 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(5, auto);
             width: 700px;
+            gap: 10px;
         }
 
         @include phone-l {
             width: 100%;
         }
     }
+    
+    &__item {
+        position: relative;
+    }
+    
+    &__btn-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
 
+    }
+    
     &__btn {
         display: grid;
         box-sizing: border-box;
@@ -57,6 +73,7 @@
         border-color: var(--color-accent);
         color: #fff;
         background-color: var(--color-accent);
+   
         &:hover .nav-prod__svg {
             fill: currentColor;
         }
@@ -126,15 +143,6 @@
         }
     }
 
-    //nav-prod active
-    &.nav-prod_active .nav-prod__btn:not(.nav-prod__first-btn) {
-    }
-
-    &_active {
-        @include tablet {
-            height: 250px;
-        }
-    }
 
     &_active .nav-prod__arr-menu {
         transform: rotate(180deg);
