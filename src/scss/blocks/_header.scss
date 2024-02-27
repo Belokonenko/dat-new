@@ -3,6 +3,7 @@
     width: 100%;
     min-height: var(--header-min-height);
     z-index: 2;
+    background-color: var(--color-bg-alpha);
 }
 
 .header__sub {
@@ -12,6 +13,7 @@
     align-items: center;
     padding-top: calc(var(--top-min-height) + 20px);
     padding-bottom: 20px;
+    background-color: var(--color-bg-alpha);
 }
 
 .header__order {

@@ -9,6 +9,7 @@
     background-color: var(--color-main);
     padding-top: calc(var(--top-min-height));
     transition: all 1s ease;
+    color: var(--color-text-light);
 }
 
 .dropdown-panel_active {
