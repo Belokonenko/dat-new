@@ -3,8 +3,9 @@
     transform: var(--transition-duration);
     background-color: transparent;
     @include reset-button;
+  
     @include tablet {
-        max-width: 100%;
+        // max-width: 100%;
     }
 
     &-round {

@@ -15,7 +15,10 @@
 .dropdown-panel_active {
     top: 0;
 }
-
+.dropdown-panel__btn-arr {
+    width: 35px;
+    height: 25px;
+}
 .dropdown-panel__container {
     display: grid;
     grid-template-columns: max-content 1fr max-content max-content;

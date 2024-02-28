@@ -135,6 +135,6 @@ gulp.task("watch:dev", function () {
     gulp.watch("./src/img/**.*", gulp.parallel("images:dev"));
     gulp.watch("./src/fonts/**.*", gulp.parallel("fonts:dev"));
     gulp.watch("./src/files/**.*", gulp.parallel("files:dev"));
-    gulp.watch("./src/js/**.*", gulp.parallel("js:dev"));
+    gulp.watch("./src/js/**/**.*", gulp.parallel("js:dev"));
 });
 

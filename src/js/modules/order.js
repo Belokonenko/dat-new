@@ -1,15 +1,19 @@
 export default function order() {
-    const telBlock = document.querySelectorAll(".order__tel-block");
-    const telBlockList = document.querySelectorAll(".order__list");
-    const orderTelRefs = document.querySelectorAll(".order__tel-ref");
+    const dropdownPanelOrder = document.querySelector(".dropdown-panel__order");
 
-    telBlock.forEach((item, i) => {
-        item.addEventListener("mouseover", () => {
-            telBlockList[i].classList.add("order__list--active");
-        });
-        item.addEventListener("mouseleave", () => {
-            telBlockList[i].classList.remove("order__list--active");
-        });
-    });
+    if (dropdownPanelOrder) {
+        console.log(dropdownPanelOrder);
 
+        const btnArr = dropdownPanelOrder.querySelector(
+            ".dropdown-panel__btn-arr"
+        );
+        console.log(btnArr);
+
+        btnArr.addEventListener("click", () => {
+            console.log("click");
+            dropdownPanelOrder.classList.toggle(
+                "order_active"
+            );
+        });
+    }
 }

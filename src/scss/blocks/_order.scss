@@ -6,13 +6,30 @@
     border-radius: 20px;
     background-color: inherit;
     color: inherit;
-    
+
     &_theme_mob {
         background-color: var(--color-main);
     }
-    
+
     &.order_theme_mob .order__inner {
         margin-left: -10px;
+    }
+
+    &.order_active .order__inner {
+        background-color: red;
+        position: absolute;
+        box-shadow: var(--shadow);
+        height: 130px;
+        background-color: inherit;
+    }
+
+    &.order_active .order__list {
+        display: grid;
+    }
+
+    &.order_active .order__arr-menu {
+        rotate: 180deg;
+        transition: var(--transition-duration);
     }
 
     &__inner {
@@ -27,26 +44,25 @@
         padding: 10px;
         background-color: inherit;
 
-        &:hover .order__list {
-            display: grid;
-        }
+        // &:hover .order__list {
+        //     display: grid;
+        // }
 
-        &:hover .order__arr-menu {
-            rotate: 180deg;
-            transition: var(--transition-duration);
-        }
+        // &:hover .order__arr-menu {
+        //     rotate: 180deg;
+        //     transition: var(--transition-duration);
+        // }
 
-        @include hover {
-            position: absolute;
-            box-shadow: var(--shadow);
-            height: 130px;
-            background-color: inherit;
-        }
+        // @include hover {
+        //     position: absolute;
+        //     box-shadow: var(--shadow);
+        //     height: 130px;
+        //     background-color: inherit;
+        // }
 
         @include tablet {
             justify-self: end;
         }
-
     }
 
     &__btn-wrap {
@@ -82,5 +98,4 @@
             color: var(--color-accent);
         }
     }
-
 }
