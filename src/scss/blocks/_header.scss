@@ -19,13 +19,13 @@
     justify-self:start; 
     margin-left: 15px;
     background-color: var(--color-bg-alpha);
-    &:hover .button-round {
-        background-color: var(--color-accent-dark);
-    }
+    // &:hover .button-round {
+    //     background-color: var(--color-accent-dark);
+    // }
 
-    &:hover .button-round__img {
-        fill: var(--color-text-light);
-    }
+    // &:hover .button-round__img {
+    //     fill: var(--color-text-light);
+    // }
 }
 
 .header__heart {

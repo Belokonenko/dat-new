@@ -59,6 +59,20 @@
     }
 }
 
+@mixin hover-arg($twoclass) {
+    @media (hover: hover) {
+        &:hover  .#{$twoclass} {
+            @content;
+        }
+    }
+    
+    @media (hover: none) {
+        &:active  .#{$twoclass} {
+            @content;
+        }
+    }
+}
+
 @mixin font-face($name, $file, $weight: 400, $style: normal) {
     @font-face {
         font-family: "#{$name}";

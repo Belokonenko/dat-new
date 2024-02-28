@@ -1,19 +1,22 @@
 export default function order() {
-    const dropdownPanelOrder = document.querySelector(".dropdown-panel__order");
+    const orders = document.querySelectorAll(".order");
 
-    if (dropdownPanelOrder) {
-        console.log(dropdownPanelOrder);
+    if (orders) {
+        orders.forEach((order) => {
+            order.addEventListener("mouseover", () => {
+                order.classList.add("order_active");
+            });
 
-        const btnArr = dropdownPanelOrder.querySelector(
-            ".dropdown-panel__btn-arr"
-        );
-        console.log(btnArr);
+            order.addEventListener("mouseout", () => {
+                order.classList.remove("order_active");
+            });
 
-        btnArr.addEventListener("click", () => {
-            console.log("click");
-            dropdownPanelOrder.classList.toggle(
-                "order_active"
-            );
+            const btn = order.querySelector(".order__btn");
+
+            btn.addEventListener("click", () => {
+                console.log("click");
+                order.classList.toggle("order_active");
+            });
         });
     }
 }

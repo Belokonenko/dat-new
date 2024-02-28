@@ -15,10 +15,10 @@
 .dropdown-panel_active {
     top: 0;
 }
-.dropdown-panel__btn-arr {
-    width: 35px;
-    height: 25px;
-}
+// .dropdown-panel__btn-arr {
+//     width: 35px;
+//     height: 25px;
+// }
 .dropdown-panel__container {
     display: grid;
     grid-template-columns: max-content 1fr max-content max-content;
@@ -46,14 +46,6 @@
 .dropdown-panel__order {
     grid-column: 1/-1; 
     justify-self: start;
-    
-    &:hover .button-round {
-        background-color: var(--color-text-light);
-    }
-
-    &:hover .button-round__img {
-        fill: var(--color-main);
-    }
 }
 
 .dropdown-panel__dec-line {
