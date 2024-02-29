@@ -91,21 +91,6 @@
 
     // --- /c ---
 
-    // --- arrow ---
-
-    &__arrow {
-        position: absolute;
-        bottom: 0;
-        right: 14.5%;
-        display: flex;
-        width: 65px;
-        height: 132px;
-        background-color: var(--color-main-light);
-        border-radius: 50px 50px 0 0;
-        margin: 0;
-    }
-
-    // --- /arrow ---
 }
 
 // ---  adaptive ---
@@ -148,9 +133,6 @@
             display: grid;
         }
 
-        &__arrow {
-            height: 100px;
-        }
     }
 }
 @media (max-width: 768px) {
@@ -177,11 +159,3 @@
         }
     }
 }
-// @media (max-width: 425px) {
-// }
-// @media (max-width: 375px) {
-// }
-// @media (max-width: 320px) {
-//}
-
-// ---  /adaptive ---
