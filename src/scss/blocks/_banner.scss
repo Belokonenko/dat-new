@@ -1,5 +1,4 @@
 .banner {
-    position: relative;
     min-height: 800px;
     height: 100vh;
     box-sizing: border-box;
@@ -11,30 +10,10 @@
     background-position: left bottom;
 
     &__title {
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            left: -40px;
-            top: 24px;
-            width: 32px;
-            height: 25px;
-
-            background-image: url(../img/leaf.svg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
 
         @include tablet {
             margin-top: 0px;
             margin-bottom: 0px;
-            &::before {
-                left: -40px;
-                top: 20px;
-                width: 32px;
-                height: 25px;
-            }
         }
     }
 
@@ -92,7 +71,7 @@
         border-radius:  40% 0px 40% 0px / 40% 0px 40% 0px ;
         max-width: 80vh;
         width: 45vw;
-        min-width: 500px;
+        min-width: 50%;
         aspect-ratio: 1/ 0.86;
         background-size: cover;
         background-position: center;
@@ -107,31 +86,31 @@
 
     }
 
-    // &__image {
-    //     max-height: 80vh;
-    //     height: auto;
-    //     width: 100%;
-    //     border-radius: 45% 0 45% 0;
-    //     object-fit: cover;
-    //     object-position: top;
-    // }
-
     // --- image ---
-
-    &__leaf1 {
+    &__leaf {
+        background-image: url(../img/leaf.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+        border: 1px solid red;
+        aspect-ratio: 1/0.8;
+    }
+    
+    &__leaf-1 {
         position: absolute;
         left: -18%;
         bottom: 16%;
         width: 30%;
     }
-    &__leaf2 {
+    &__leaf-2 {
         position: absolute;
         left: -14%;
         bottom: 11%;
         width: 20%;
+        transform: scaleX(-1);
     }
 
-    &__leaf3 {
+    &__leaf-3 {
         position: absolute;
         right: 2%;
         top: 0;
