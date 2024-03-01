@@ -12,20 +12,12 @@
     align-items: center;
     padding-top: calc(var(--top-min-height) + 20px);
     padding-bottom: 20px;
-    background-color: var(--color-bg-alpha);
+    background-color: transparent;
 }
 
 .header__order {
     justify-self:start; 
     margin-left: 15px;
-    background-color: var(--color-bg-alpha);
-    // &:hover .button-round {
-    //     background-color: var(--color-accent-dark);
-    // }
-
-    // &:hover .button-round__img {
-    //     fill: var(--color-text-light);
-    // }
 }
 
 .header__heart {

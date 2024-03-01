@@ -6,7 +6,11 @@
     border-radius: 20px;
     background-color: inherit;
     color: inherit;
-    
+
+    &_theme_lihgt {
+        background-color: var(--color-bg-alpha);
+    }
+
     &_theme_mob {
         background-color: var(--color-main);
     }
