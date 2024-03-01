@@ -13,7 +13,7 @@
     }
 
     &__inner {
-        padding-top: 245px;
+        padding-top: 50px;
         display: grid;
         min-height: 100vh;
 
@@ -34,26 +34,28 @@
     }
 
     &__title {
+        margin-bottom: 28px;
+
         @include tablet {
-            margin-top: 0px;
-            margin-bottom: 0px;
+            margin-bottom: 2px;
         }
+    }
+    
+    &__sub-title {
+        font-weight: 300;
     }
 
     &__m-l {
         margin-left: 44px;
     }
 
-    &__sub-title {
-        font-weight: 300;
-    }
-
     &__desc {
-        max-width: min(561px, 50%);
+        max-width: 561px;
         margin-bottom: 23px;
 
         @include tablet {
             max-width: 70%;
+            margin-bottom: 33px;
         }
 
         @include phone-l {
@@ -64,7 +66,7 @@
     &__button {
         @include tablet {
             order: 1;
-            margin: 40px 0;
+            margin-bottom: 40px ;
             justify-self: center;
         }
     }
@@ -76,8 +78,9 @@
         justify-content: end;
 
         @include tablet {
-        align-items: end;
+            align-items: end;
             justify-content: center;
+            margin-bottom: 35px;
         }
     }
 
@@ -93,7 +96,7 @@
         background-position: center;
 
         @include responsive-background-image("../img/banner-img-2/b-2");
-        
+
         @include tablet {
             max-width: 100%;
             width: 97vw;
