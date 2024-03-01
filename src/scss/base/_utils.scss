@@ -8,18 +8,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
-    background-color: rgb(255, 0, 0, 0.5);
 
     @include tablet {
-    grid-template-columns: 1fr;
-    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-    margin-inline: auto;
-    padding-inline: var(--container-padding-x);
-    
+        grid-template-columns: 1fr;
+        max-width: calc(
+            var(--container-width) + var(--container-padding-x) * 2
+        );
+        margin-inline: var(--container-padding-x);
     }
 
     &__block-one {
-        background-color: rgb(255, 0, 255, 0.5);
         margin-left: max(
             var(--container-padding-x),
             calc(100% - var(--container-width) / 2)
@@ -31,9 +29,7 @@
     }
 
     &__block-two {
-        background-color: rgb(255, 255, 0, 0.5);
     }
-
 }
 
 .visually-hidden {
