@@ -4,8 +4,27 @@
     padding-inline: var(--container-padding-x);
 }
 
+.container-asymmetrical {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    background-color: rgb(255, 0, 0, 0.5);
+
+    &__block-one {
+        background-color: rgb(255, 0, 255, 0.5);
+        margin-left: max(
+            var(--container-padding-x),
+            calc(100% - var(--container-width) / 2)
+        );
+    }
+
+    &__block-two {
+        background-color: rgb(255, 255, 0, 0.5);
+    }
+}
+
 .visually-hidden {
-    position: absolute!important;
+    position: absolute !important;
     width: 1px !important;
     height: 1px !important;
     margin: -1px !important;
@@ -19,16 +38,15 @@
 }
 
 // Hidden small devices (landscape phones, less than 768px)
-.hidden-mobile{
+.hidden-mobile {
     @include phone-l {
         display: none !important;
     }
 }
 
 //Hidden medium devices (tablets, 768px and up )
-.visible-mobile{
+.visible-mobile {
     @include tablet-up {
         display: none !important;
     }
-
 }

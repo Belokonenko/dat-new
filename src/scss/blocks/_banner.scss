@@ -2,32 +2,37 @@
     position: relative;
     min-height: 900px;
     height: 100vh;
-    box-sizing: border-box;
 
     @include responsive-background-image("../img/banner-img-1/b_1");
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right top;
+    
 
-    &__title {
-        @include tablet {
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-    }
 
     &__inner {
         display: grid;
         height: 100%;
-        align-content: center;
-        justify-content: start;
-        overflow: hidden;
 
         @include tablet {
             padding-top: 200px;
             padding-bottom: 0;
             align-content: auto;
+        }
+    }
+
+    
+    // --- text ---
+    &__block-text {
+        display: grid;
+        align-content: center;
+    }
+    
+    &__title {
+        @include tablet {
+            margin-top: 0px;
+            margin-bottom: 0px;
         }
     }
 
@@ -60,12 +65,14 @@
         }
     }
 
-    // --- /text ---
-
     // --- image ---
-
+    &__block-image {
+        display: grid;
+        align-items: end;
+        justify-content: end;
+    }
     &__wraper-image {
-        position: absolute;
+        position: relative;
         bottom: 0;
         right: 0;
         border-radius: 40% 0px 40% 0px / 40% 0px 40% 0px;
@@ -101,7 +108,7 @@
         bottom: 16%;
         width: 30%;
     }
-    
+
     &__leaf-2 {
         position: absolute;
         left: -14%;
