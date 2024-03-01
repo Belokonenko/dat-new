@@ -1,16 +1,11 @@
 .banner {
     position: relative;
-    min-height: 800px;
+    min-height: 900px;
     height: 100vh;
     box-sizing: border-box;
 
     @include responsive-background-image("../img/banner-img-1/b_1");
 
-    // background: linear-gradient(
-    //     45deg,
-    //     rgba(255, 255, 255, 1),
-    //     rgba(255, 255, 255, 0)
-    // );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right top;
@@ -106,6 +101,7 @@
         bottom: 16%;
         width: 30%;
     }
+    
     &__leaf-2 {
         position: absolute;
         left: -14%;
