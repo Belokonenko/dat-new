@@ -1,19 +1,21 @@
 .banner {
     position: relative;
-    min-height: 900px;
-    height: 100vh;
+    min-height: 100vh;
 
     @include responsive-background-image("../img/banner-img-1/b_1");
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right top;
-    
 
+    @include tablet {
+        min-height: 500px;
+    }
 
     &__inner {
+        padding-top: 245px;
         display: grid;
-        height: 100%;
+        min-height: 100vh;
 
         @include tablet {
             padding-top: 200px;
@@ -22,13 +24,15 @@
         }
     }
 
-    
     // --- text ---
     &__block-text {
         display: grid;
         align-content: center;
+        @include tablet {
+            display:contents;
+        }
     }
-    
+
     &__title {
         @include tablet {
             margin-top: 0px;
@@ -70,7 +74,13 @@
         display: grid;
         align-items: end;
         justify-content: end;
+        
+        @include tablet {
+            justify-content: center;
+        }
+
     }
+    
     &__wraper-image {
         position: relative;
         bottom: 0;
