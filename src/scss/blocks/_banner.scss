@@ -37,7 +37,7 @@
             margin-bottom: 2px;
         }
     }
-    
+
     &__sub-title {
         font-weight: 300;
     }
@@ -63,12 +63,13 @@
     &__button {
         @include tablet {
             order: 1;
-            margin-bottom: 40px ;
+            margin-bottom: 40px;
             justify-self: center;
         }
     }
 
     // --- image ---
+
     &__block-image {
         display: grid;
         align-items: end;
@@ -94,23 +95,25 @@
 
         @include responsive-background-image("../img/banner-img-2/b-2");
 
-
         @include desktop-l {
             min-width: 600px;
-
         }
-        
+
         @include desktop {
             min-width: 500px;
-
         }
-        
+
         @include tablet {
-            min-width: 97vw;
+            min-width: 94vw;
+        }
+
+        @include phone {
+            min-width: 91vw;
         }
     }
 
     // --- image ---
+
     &__leaf {
         background-image: url(../img/leaf.png);
         background-repeat: no-repeat;
