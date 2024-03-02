@@ -27,6 +27,22 @@
         }
     }
 
+    &_leaf-l-h1 {
+        &::before {
+            position: absolute;
+            display: inline-block;
+            left: -40px;
+            content: url("../img/Svg/leaf.svg");
+            height: 32px;
+            width: 25px;
+            margin-right: 10px;
+
+            @include tablet {
+                top: 19px;
+            }
+        }
+    }
+
     &_leaf-r {
         &::after {
             display: inline-block;
