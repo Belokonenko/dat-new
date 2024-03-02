@@ -7,6 +7,7 @@
         right: 0px;
         transform: translateX(50%);
     }
+  
     &__decor-ellipse-0-1 {
         position: absolute;
         left: 0;
@@ -43,15 +44,20 @@
     //--- img ---
 
     &__img-wrap {
+        max-width: 683px;
+        aspect-ratio: 1/ .85;
         display: flex;
         position: relative;
         align-self: start;
         background-color: transparent;
-    }
-
-    &__img {
+        @include responsive-background-image("../img/about-us/a-us");
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         border-radius: 0 48% 0 45%;
     }
+
 
     &__leaf1 {
         position: absolute;
@@ -101,6 +107,7 @@
 }
 
 @media (max-width: 768px) {
+    
     .about-us {
         &__container {
         }
