@@ -8,21 +8,26 @@
     }
 
     &_leaf-l {
+        padding-left: 50px;
         &::before {
             position: absolute;
             display: inline-block;
-            left: -40px;
-            content: url("../img/Svg/leaf.svg");
-            height: 32px;
-            width: 25px;
+            left: 0px;
+            bottom: 0;
+            content: "";
+            height: 45px;
+            width: 35px;
             margin-right: 10px;
+            background-image: url(../../img/Svg/leaf.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
 
             @include tablet {
                 margin-left: 20px;
-                &::before {
-                    height: 16px;
-                    width: 13px;
-                }
+                height: 16px;
+                width: 13px;
+                background-color: red;
             }
         }
     }
