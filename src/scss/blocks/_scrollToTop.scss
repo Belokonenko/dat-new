@@ -1,17 +1,18 @@
 #scrollToTopBtn {
     display: none; /* По умолчанию кнопка скрыта */
     position: fixed;
-    z-index: 99;
-    border: none;
-    cursor: pointer;
-
     bottom: 0;
     right: 14.5%;
-    display: flex;
+    z-index: 99;
+    cursor: pointer;
+
     width: 65px;
     height: 132px;
-    background-color: var(--color-main-light);
+    
+    border: none;
     border-radius: 50px 50px 0 0;
+    
+    background-color: var(--color-main-light);
     margin: 0;
 }
 .scrollToTopBtn__arr {
