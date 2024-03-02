@@ -9,7 +9,6 @@
     background-position: right top;
 
     @include tablet {
-        min-height: 500px;
     }
 
     &__inner {
@@ -90,16 +89,26 @@
 
         max-width: 80vh;
         width: 45vw;
-        min-width: 50%;
+        min-width: 800px;
         aspect-ratio: 1 / 0.86;
         background-size: cover;
         background-position: center;
 
         @include responsive-background-image("../img/banner-img-2/b-2");
 
+
+        @include desktop-l {
+            min-width: 600px;
+
+        }
+        
+        @include desktop {
+            min-width: 500px;
+
+        }
+        
         @include tablet {
-            max-width: 100%;
-            width: 97vw;
+            min-width: 97vw;
         }
     }
 
