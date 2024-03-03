@@ -35,6 +35,10 @@
     &__text-wrap {
         padding-left: 20%;
 
+        @include desktop {
+            padding-left: 10%;
+        }
+
         @include tablet {
             padding: 0;
         }
@@ -59,13 +63,12 @@
     //--- img ---
 
     &__img-wrap {
-        display: flex;
         position: relative;
+        display: flex;
+        align-self: start;
         max-width: 683px;
         aspect-ratio: 1 / 0.85;
         border-radius: 0 48% 0 45%;
-
-        align-self: start;
 
         @include responsive-background-image("../img/about-us/a-us");
 
@@ -86,6 +89,7 @@
         bottom: 13%;
         width: 35%;
     }
+    
     &__leaf2 {
         position: absolute;
         left: 10%;
