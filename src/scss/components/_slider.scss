@@ -1,6 +1,6 @@
-$transparent-padding : 0px;
-$gap-sliders : 30px;
-$transparent-padding-vp : calc($gap-sliders / 2 )  ;
+$transparent-padding: 0px;
+$gap-sliders: 30px;
+$transparent-padding-vp: calc($gap-sliders / 2);
 $max-width-container: 4;
 
 .slider {
@@ -13,21 +13,24 @@ $max-width-container: 4;
     margin: 0 auto;
     padding: 0 $transparent-padding;
     overflow: hidden;
-
 }
 
 .slider__viewport {
     min-height: 50px;
-    // background-color: rgba(0, 255, 255, 0.5);
     border: $transparent-padding-vp solid transparent;
+    
+    @include tablet {
+        border: 33px solid transparent;
+    }
 }
 
 .slider__line {
     display: grid;
-    gap: $gap-sliders ;
+    gap: $gap-sliders;
     grid-auto-flow: column;
     height: 100%;
     transition: all 0.7s ease;
+
 }
 
 .slider__item {
@@ -46,7 +49,7 @@ $max-width-container: 4;
 .slider__btn {
     position: absolute;
     top: 40%;
-    
+
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -150,13 +153,6 @@ $max-width-container: 4;
 @media (max-width: 425px) {
     .slider {
         // margin: 20px;
-    }
-    .slider__line {
-        gap: 10px;
-    }
-
-    .slider__line {
-        gap: 10px;
     }
 }
 @media (max-width: 375px) {
