@@ -23,6 +23,7 @@
         padding: 100px 0px;
         margin: 0 auto;
         background-color: transparent;
+        padding-inline: 10px;
 
         @include tablet {
             grid-template-columns: 1fr;
@@ -41,7 +42,7 @@
 
     &__title {
         margin-bottom: 20px;
-        
+
         @include tablet {
             margin-top: 30px;
         }
@@ -63,9 +64,9 @@
         max-width: 683px;
         aspect-ratio: 1 / 0.85;
         border-radius: 0 48% 0 45%;
-        
+
         align-self: start;
-        
+
         @include responsive-background-image("../img/about-us/a-us");
 
         background-color: transparent;
@@ -81,16 +82,15 @@
 
     &__leaf1 {
         position: absolute;
-        left: -10%;
+        left: -8%;
         bottom: 13%;
         width: 35%;
     }
     &__leaf2 {
         position: absolute;
         left: 10%;
-        bottom: -3%;
+        bottom: -6%;
         width: 25%;
+        transform: scaleX(-1);
     }
 }
-
-
