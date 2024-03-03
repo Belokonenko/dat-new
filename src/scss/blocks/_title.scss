@@ -9,9 +9,14 @@
 
     &_leaf-l {
         padding-left: 50px;
+
+        @include tablet {
+            padding-left: 20px;
+        }
+
         &::before {
-            position: absolute;
             display: inline-block;
+            position: absolute;
             left: 0px;
             bottom: 0;
             content: "";
@@ -24,10 +29,8 @@
             background-repeat: no-repeat;
 
             @include tablet {
-                margin-left: 20px;
                 height: 16px;
                 width: 13px;
-                background-color: red;
             }
         }
     }
