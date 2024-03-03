@@ -27,6 +27,7 @@
         @include tablet {
             grid-template-columns: 1fr;
             grid-template-rows: max-content max-content;
+            padding-inline: var(--container-padding-x);
         }
     }
 
