@@ -28,19 +28,16 @@
         align-items:baseline;
         gap: 10px;
         
-        background-color: blue;
         &::before {
             display: inline-block;
             content: "";
             height: 25px;
             width: 32px;
             
-            background-image: url(../../img/Svg/leaf.svg);
+            background-image: url(../img/Svg/leaf.svg);
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-
-            background-color: red;
             
             @include tablet {
                 width: 14px;
@@ -63,7 +60,7 @@
             height: 25px;
             width: 32px;
 
-            background-image: url(../../img/Svg/leaf.svg);
+            background-image: url(../img/Svg/leaf.svg);
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;

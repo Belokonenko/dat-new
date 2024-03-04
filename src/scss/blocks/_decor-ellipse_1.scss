@@ -2,45 +2,16 @@
     position: absolute;
     width: 1068px;
     height: 1068px;
-    flex-shrink: 0;
+    filter: blur(30px);
     border-radius: 1068px;
+    flex-shrink: 0;
     background: radial-gradient(
         50% 50% at 50% 50%,
-        rgba(132, 190, 81, 0.3) 0%,
+        rgba(132, 190, 81, 0.2) 0%,
         rgba(210, 230, 189, 0) 100%
     );
-    // filter: blur(30px);
 
-    border: 1px solid gold;
-
-
-    // ---  adaptive ---
-
-    // //desctop
-
-    // @media (max-width: 1440px) {
-    // }
-    // @media (max-width: 1270px) {
-    // }
-    // @media (max-width: 1024px) {
-    // }
-
-    // //tablet
-
-    @media (max-width: 992px) {
+    @include tablet {
         width: 70%;
     }
-    // @media (max-width: 768px) {
-    // }
-
-    // //phones
-
-    // @media (max-width: 425px) {
-    // }
-    // @media (max-width: 375px) {
-    // }
-    // @media (max-width: 320px) {
-    //}
-
-    // ---  /adaptive ---
 }
