@@ -115,6 +115,8 @@
     );
 }
 
+// @include responsive-background-image('../img/1/c-001');
+
 @mixin responsive-background-image-gradient(
     $image-path,
     $direction: 180deg,
@@ -135,7 +137,7 @@
 }
 
 // .my-element {
-//   @include responsive-background-image('path/to/image', 45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+//   @include responsive-background-image-gradient('path/to/image', 45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 //   background-size: cover;
 //   /* Дополнительные свойства фона */
 // }
