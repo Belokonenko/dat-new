@@ -1,6 +1,6 @@
 .partners {
     padding: 100px 0;
-    
+
     background-color: var(--color-bg-light);
     min-height: 300px;
 
@@ -14,12 +14,17 @@
         background: #fff;
     }
 }
+
 .partners__viewport {
     overflow: visible;
 }
 
+.partners__img {
+    padding: 5px;
+}
+
 .partners__btn {
-background-color: var(--color-main-light);
+    background-color: var(--color-main-light);
 
     &:hover {
         background: var(--color-main);
