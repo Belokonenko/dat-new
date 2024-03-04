@@ -59,7 +59,7 @@
         font-weight: 600;
         line-height: 105.9%; /* 14.826px */
         text-transform: uppercase;
-        background-color: var(--color-bg-alpha);
+        background-color:transparent;
 
         @include tablet {
             grid-template-columns: 24px 1fr max-content;
