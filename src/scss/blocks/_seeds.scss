@@ -1,14 +1,15 @@
 .seeds {
     min-height: 627px;
-
-    @include responsive-background-image("../img/seedd/seed");
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     padding: 20px 0;
 
+    @include responsive-background-image("../img/seedd/seed");
+
     @include phone {
+        min-height: 651px;
+        padding: 50px 0;
         @include responsive-background-image("../img/seed-mobile/6");
     }
 
@@ -67,20 +68,8 @@
         }
     }
 
-    &__text--active {
+    &__text_active {
         font-size: 1rem;
     }
 }
 
-@media (max-width: 768px) {
-    .seeds {
-        &__btn {
-            &-arr {
-            }
-        }
-
-        &__text--active {
-            font-size: 1rem;
-        }
-    }
-}

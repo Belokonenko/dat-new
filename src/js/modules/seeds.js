@@ -7,7 +7,7 @@ export default function seeds() {
 
         btn.addEventListener("click", () => {
             console.log("clic hidden text");
-            textHidden.classList.add("seeds__text--active");
+            textHidden.classList.add("seeds__text_active");
             btn.style.display = "none";
         });
     }
