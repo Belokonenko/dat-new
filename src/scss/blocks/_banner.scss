@@ -24,9 +24,12 @@
     // --- text ---
     &__block-text {
         display: grid;
-        align-content: center;
+        padding-top: 15%;
+        align-content: start;
+        
         @include tablet {
             display: contents;
+            padding-top: 0;
         }
     }
 
@@ -66,7 +69,6 @@
             margin-bottom: 40px;
             justify-self: center;
             margin-left: 0;
-
         }
     }
 
@@ -115,7 +117,6 @@
     }
 
     // --- image ---
-
 
     &__leaf-1 {
         position: absolute;

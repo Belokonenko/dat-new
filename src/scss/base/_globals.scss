@@ -61,6 +61,8 @@ fieldset {
 img {
     height: auto;
     max-width: 100%;
+    user-select: none;
+    pointer-events: none;
 }
 
 input,
