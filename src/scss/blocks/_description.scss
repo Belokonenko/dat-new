@@ -12,7 +12,7 @@
     background-size: cover;
     background-position: center;
 
-    @include phone {
+    @include phone-m{
         padding: 35px 0;
         @include responsive-background-image("../img/descript-bg-mobile/desc");
     }

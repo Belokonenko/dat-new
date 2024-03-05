@@ -1,7 +1,19 @@
 // Desctop first
 
-// X-Small devices (portrait phones, less than 576px)
+// Small devices (portrait phones, less than 375px)
 @mixin phone {
+    @media (max-width: 374.98px) { 
+            @content; 
+    }
+}
+// Small devices (portrait phones, less than 425px)
+@mixin phone-s {
+    @media (max-width: 424.98px) { 
+            @content; 
+    }
+}
+// Small devices (portrait phones, less than 576px)
+@mixin phone-m {
     @media (max-width: 575.98px) { 
             @content; 
     }

@@ -2,11 +2,9 @@
     position: relative;
     font-size: 45px;
     font-weight: 700;
-
     @include tablet {
         font-size: 45px;
     }
-
 
     &_leaf-l-h1 {
         &::before {
@@ -77,6 +75,8 @@
     &_size_l {
         font-size: 45px;
 
+        line-height: 1.5;
+        text-align: center;
         @include tablet {
             font-size: 22px;
         }

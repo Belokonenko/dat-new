@@ -30,7 +30,7 @@
         justify-self: start;
         margin-left: 15px;
 
-        @include phone {
+        @include phone-m{
             display: none;
         }
     }

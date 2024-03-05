@@ -1,17 +1,16 @@
 .nav-prod {
     transition: var(--transition-duration);
-    
+
     @include tablet {
-        height: 45px;
+        height: 47px;
         overflow: hidden;
     }
-    
+
     &_active {
         @include tablet {
-        height: auto;
+            height: auto;
         }
     }
-
 
     &__list {
         display: grid;
@@ -29,18 +28,17 @@
             width: 100%;
         }
     }
-    
+
     &__item {
         position: relative;
     }
-    
+
     &__btn-menu {
         position: absolute;
         right: 0;
         top: 0;
-
     }
-    
+
     &__btn {
         display: grid;
         box-sizing: border-box;
@@ -59,11 +57,14 @@
         font-weight: 600;
         line-height: 105.9%; /* 14.826px */
         text-transform: uppercase;
-        background-color:transparent;
+        background-color: transparent;
 
         @include tablet {
             grid-template-columns: 24px 1fr max-content;
             border-color: var(--color-accent);
+            height: 47px;
+            padding-inline: 20px ;
+            border-radius: 25px;
             background-color: var(--color-accent);
             color: #fff;
         }
@@ -73,7 +74,7 @@
         border-color: var(--color-accent);
         color: #fff;
         background-color: var(--color-accent);
-   
+
         &:hover .nav-prod__svg {
             fill: currentColor;
         }
@@ -136,16 +137,14 @@
     &__arr-menu {
         width: 10px;
         aspect-ratio: 1;
-        
+
         @include tablet {
             fill: #fff;
             transition: all 0.3s ease;
         }
     }
 
-
     &_active .nav-prod__arr-menu {
         transform: rotate(180deg);
     }
 }
-

@@ -7,7 +7,7 @@
 
     @include responsive-background-image("../img/seedd/seed");
 
-    @include phone {
+    @include phone-m{
         min-height: 651px;
         padding: 50px 0;
         @include responsive-background-image("../img/seed-mobile/6");
@@ -40,7 +40,7 @@
         line-height: normal;
         text-decoration-line: underline;
 
-        @include phone {
+        @include phone-m{
             display: flex;
             align-items: center;
             background-color: transparent;
@@ -52,7 +52,7 @@
     }
 
     &__btn-arr {
-        @include phone {
+        @include phone-m{
             border: solid #fff;
             border-width: 0 2px 2px 0;
             display: inline-block;
@@ -63,7 +63,7 @@
     }
 
     &__text-hidden {
-        @include phone {
+        @include phone-m{
             font-size: 0;
         }
     }
