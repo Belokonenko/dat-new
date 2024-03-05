@@ -5,6 +5,7 @@ import sliders from "./modules/slider";
 import seeds from "./modules/seeds";
 import navProd from "./modules/navProd";
 import scrollToTop from "./modules/scrollToTop";
+import registration from "./modules/registration";
 
 document.addEventListener("DOMContentLoaded", () => {
     buttonBurger("dropdown-panel");
@@ -13,4 +14,5 @@ document.addEventListener("DOMContentLoaded", () => {
     seeds();
     navProd();
     scrollToTop();
+    registration();
 });

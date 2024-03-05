@@ -70,43 +70,90 @@
                         Contact information will be used only for placing orders
                         and making it easier to work with the site
                     </p>
-
-                    <form class="registration__form" action="">
-                        <div class="registration__form-name">
-                            <input type="text" placeholder="Name" />
-                            <input type="text" placeholder="Surname" />
-                            <input type="text" placeholder="Phone" />
-                            <input type="text" placeholder="E-mail" />
-                        </div>
-                        <input type="text" placeholder="Password" />
-                        <input type="text" placeholder="Confirm password" />
-                        <p
-                            class="
-                                registration____filter-option
-                                registration____filter-checkbox
-                            "
-                        >
-                            <input
-                                class="
-                                    visually-hidden
-                                    registration__filter-input-checkbox
-                                    registration__filter-input
-                                "
-                                type="checkbox"
-                                name="agree"
-                                id="filter-agree"
-                                checked
-                            /><label for="filter-agree"
-                                >I agree to the processing and protection of
-                                <a href="">personal data</a></label
-                            >
-                        </p>
-
-                        <button class="btn registration__form-btn">
-                            Sign up
-                        </button>
-                    </form>
                 </div>
+
+                <form
+                    class="registration__form"
+                    action=""
+                    onsubmit="return validateForm()"
+                >
+                    <div class="registration__form-name">
+                        <input
+                            type="text"
+                            placeholder="Name"
+                            required
+                            minlength="2"
+                            maxlength="50"
+                            spellcheck="true"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Surname"
+                            required
+                            minlength="2"
+                            maxlength="50"
+                            spellcheck="true"
+                        />
+                        <input
+                            type="tel"
+                            placeholder="Phone"
+                            required
+                            minlength="10"
+                            maxlength="15"
+                            spellcheck="false"
+                        />
+                        <input
+                            type="email"
+                            placeholder="E-mail"
+                            required
+                            spellcheck="false"
+                        />
+                    </div>
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        required
+                        minlength="6"
+                    />
+                    <input
+                        type="password"
+                        placeholder="Confirm password"
+                        required
+                        minlength="6"
+                    />
+                    <!--<p -->
+                    <!--    class=" -->
+                    <!--        registration____filter-option -->
+                    <!--        registration____filter-checkbox -->
+                    <!--    " -->
+                    <!--> -->
+                    <!--    <input -->
+                    <!--        class=" -->
+                    <!--            <!-1- -->
+                    <!--            visually-hidden -->
+                    <!--            -1-> -->
+                    <!--            registration__filter-input-checkbox -->
+                    <!--            registration__filter-input -->
+                    <!--        " -->
+                    <!--        type="checkbox" -->
+                    <!--        name="agree" -->
+                    <!--        id="filter-agree" -->
+                    <!--        required -->
+                    <!--    /> -->
+                    <!--    <label for="filter-agree" -->
+                    <!--        >I agree to the processing and protection of -->
+                    <!--        <a href="">personal data</a></label -->
+                    <!--    > -->
+                    <!--</p> -->
+
+                    <label >
+                        >I agree to the processing and protection of personal data
+                        <input type="checkbox">
+                    </label>
+
+                    <span id="error-message" style="color: red"></span>
+                    <button class="btn registration__form-btn">Sign up</button>
+                </form>
             </section>
         </main>
 
