@@ -2,10 +2,9 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 500px;
     color: var(--color-text-light);
-    padding: 108px 0;
+    padding: 110px 0;
 
     @include responsive-background-image("../img/descript-bg/descript-bg");
 
@@ -17,15 +16,18 @@
         padding: 35px 0;
         @include responsive-background-image("../img/descript-bg-mobile/desc");
     }
-   
 
     &__title {
-        margin-bottom: 4px;
+        margin-bottom: 20px;
+        @include phone-l {
+            margin-bottom: 13px;
+        }
     }
-    
+
     & p {
         font-weight: 400;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+        line-height: 1.2;
     }
 
     // &__decor-ellipse_0-0 {

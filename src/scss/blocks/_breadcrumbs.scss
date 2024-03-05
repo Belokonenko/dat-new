@@ -1,7 +1,8 @@
 $pag-item-mar-r: 30px;
-$panel-h: 25%;
+$panel-h: 27%;
 
 .breadcrumbs {
+    margin-bottom: 20px;
     &__list {
         display: flex;
         justify-content: center;
