@@ -7,6 +7,7 @@
         font-size: 45px;
     }
 
+
     &_leaf-l-h1 {
         &::before {
             position: absolute;
@@ -25,20 +26,20 @@
 
     &_leaf-l {
         display: flex;
-        align-items:baseline;
+        align-items: baseline;
         gap: 10px;
-        
+
         &::before {
             display: inline-block;
             content: "";
             height: 25px;
             width: 32px;
-            
+
             background-image: url(../img/Svg/leaf.svg);
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-            
+
             @include tablet {
                 width: 14px;
                 height: 11px;
@@ -49,11 +50,11 @@
     &_leaf-r {
         margin-bottom: 40px;
         justify-content: center;
-        
+
         @include tablet {
             margin-bottom: 20px;
         }
-        
+
         &::after {
             display: inline-block;
             content: "";

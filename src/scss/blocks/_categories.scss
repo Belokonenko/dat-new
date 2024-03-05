@@ -18,70 +18,61 @@
     }
 
     &__list {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 30px 26px;
-        min-width: 100%;
-
-        @include tablet {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        @include phone-l {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25;
-        }
-
-        @include phone {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 20px;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
     }
 
     &__item {
+        flex: 1 1 auto;
         position: relative;
         height: 164px;
+        min-width: 240px;
+        max-width: 255px;
         border-radius: 20px;
         overflow: hidden;
         background-size: cover;
         background-position: center;
-            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
-        
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+
+        @include phone {
+            min-width: 200px;
+            max-width: 100%;
+        }
+
         &-1 {
-            @include responsive-background-image('../img/1/c-001');
+            @include responsive-background-image("../img/1/c-001");
         }
-        
+
         &-2 {
-            @include responsive-background-image('../img/2/c-002');
+            @include responsive-background-image("../img/2/c-002");
         }
-        
+
         &-3 {
-            @include responsive-background-image('../img/3/c-003');
+            @include responsive-background-image("../img/3/c-003");
         }
-        
+
         &-4 {
-            @include responsive-background-image('../img/4/c-004');
+            @include responsive-background-image("../img/4/c-004");
         }
-        
+
         &-5 {
-            @include responsive-background-image('../img/5/c-005');
+            @include responsive-background-image("../img/5/c-005");
         }
-        
+
         &-6 {
-            @include responsive-background-image('../img/6/c-006');
+            @include responsive-background-image("../img/6/c-006");
         }
 
         &-7 {
-            @include responsive-background-image('../img/7/c-007');
+            @include responsive-background-image("../img/7/c-007");
         }
-        
+
         &-8 {
-            @include responsive-background-image('../img/8/c-008');
+            @include responsive-background-image("../img/8/c-008");
         }
-        
+
         &:hover .categories__item-panel {
             bottom: calc(($panel-h) * -1);
         }
@@ -121,40 +112,3 @@
     }
 }
 
-.description {
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    background-image: url(../img/catalog-img-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    color: var(--color-text-light);
-    overflow: hidden;
-    &__title {
-        font-size: 45px;
-        font-weight: 700;
-    }
-
-    & p {
-        font-weight: 400;
-        margin-bottom: 20px;
-    }
-}
-.description__decor-ellipse_0-0 {
-    top: 0;
-    right: 0;
-    transform: translate(50%, -50%);
-}
-.description__decor-ellipse_0-1 {
-    left: 0;
-    top: 0;
-    transform: translateX(-50%);
-}
-.description__decor-ellipse_1-0 {
-    right: -500px;
-    bottom: -500px;
-}

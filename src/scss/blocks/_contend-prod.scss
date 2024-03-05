@@ -88,50 +88,6 @@ $panel-h : 200px;
 
 //---/ catalog ---
 
-//--- description ---
-
-.description {
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-    background-image: url(../img/catalog-img-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    color: var(--color-text-light);
-    overflow: hidden;
-    &__title {
-        font-size: 45px;
-        font-weight: 700;
-    }
-
-    & p {
-        font-weight: 400;
-        margin-bottom: 20px;
-    }
-}
-.description__decor-ellipse_0-0 {
-    top: 0; 
-    right: 0;
-    transform: translate(50%,-50%);
-}
-.description__decor-ellipse_0-1 {
-    left: 0;
-    top: 0;
-    transform: translateX(-50%);
-}
-.description__decor-ellipse_1-0 {
-    right: -500px;
-    bottom: -500px;
-
-}
-
-//---/description ---
-
-//
 // ---  adaptive ---
 
 @media (max-width: 1440px) {

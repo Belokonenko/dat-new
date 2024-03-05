@@ -1,0 +1,47 @@
+.description {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    color: var(--color-text-light);
+    padding: 108px 0;
+
+    @include responsive-background-image("../img/descript-bg/descript-bg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include phone {
+        padding: 35px 0;
+        @include responsive-background-image("../img/descript-bg-mobile/desc");
+    }
+   
+
+    &__title {
+        margin-bottom: 4px;
+    }
+    
+    & p {
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    // &__decor-ellipse_0-0 {
+    //     top: 0;
+    //     right: 0;
+    //     transform: translate(50%, -50%);
+    // }
+
+    // &__decor-ellipse_0-1 {
+    //     left: 0;
+    //     top: 0;
+    //     transform: translateX(-50%);
+    // }
+
+    // &__decor-ellipse_1-0 {
+    //     right: -500px;
+    //     bottom: -500px;
+    // }
+}
