@@ -1,20 +1,20 @@
 "use strict";
 import buttonBurger from "./modules/button-burger";
 import order from "./modules/order";
-import sliders from "./modules/slider";
 import seeds from "./modules/seeds";
 import navProd from "./modules/navProd";
 import scrollToTop from "./modules/scrollToTop";
-import {test} from "./modules/registration";
-// import validateName from "./modules/validateName";
+import validateName from "./modules/validateName";
+import validateNameUpper from "./modules/validateNameUpper";
+import validateNoSpaces from "./modules/validateNoSpaces";
 
 document.addEventListener("DOMContentLoaded", () => {
     buttonBurger("dropdown-panel");
     order();
-    sliders();
     seeds();
     navProd();
     scrollToTop();
-    validateName();
+    validateName("name");
+    validateNameUpper("name");
+    // validateNoSpaces("name");
 });
-
