@@ -6,8 +6,8 @@
         @@include('blocks/svg-sprites.html') @@include('blocks/header.html')
 
         <main class="main">
-            <section class="registration">
-                <div class="container">
+            <section class="registration container">
+                <div class="">
                     <div class="breadcrumbs registration__breadcrumbs">
                         <ul class="breadcrumbs__list">
                             <li class="breadcrumbs__item">
@@ -48,11 +48,13 @@
 
                     <p class="text text_dark registration__descr">
                         Log in to use all the features of your personal account:
-                        order tracking, subscription settings, social media
-                        connections, and more. We never and under no
-                        circumstances disclose personal data of customers.
-                        Contact information will be used only for placing orders
-                        and making it easier to work with the site
+                        <span class="hidden-mobile">
+                            order tracking, subscription settings, social media
+                            connections, and more. We never and under no
+                            circumstances disclose personal data of customers.
+                            Contact information will be used only for placing
+                            orders and making it easier to work with the site
+                        </span>
                     </p>
                 </div>
 
@@ -139,7 +141,12 @@
                             />
                             <span id="password_message_err"></span>
                         </div>
-                        <div class="registration__fild  registration__confirm-password">
+                        <div
+                            class="
+                                registration__fild
+                                registration__confirm-password
+                            "
+                        >
                             <input
                                 class="confirm-password registration__input"
                                 id=" confirm-password"
@@ -154,20 +161,33 @@
                         </div>
 
                         <div class="registration__fild registration__agree">
-                            <input
-                                class="input-checkbox filter-input"
-                                type="checkbox"
-                                name="agree"
-                                id="agree"
-                                required
-                            />
-                            <label for="agree"
+                            <label class="registration__lable" for="agree"
                                 >I agree to the processing and protection of
-                                <a href="">personal data</a></label
-                            >
+                                <a
+                                    class="registration__agree-href"
+                                    href="404.html"
+                                    >personal data
+                                </a>
+
+                                <input
+                                    class="
+                                        visually-hidden
+                                    "
+                                    type="checkbox"
+                                    name="agree"
+                                    id="agree"
+                                    required
+                                />
+                                <span class="registration__checkmark"></span>
+                            </label>
                         </div>
 
-                        <button class="button button_accent button_smooth registration__button ">
+                        <button
+                            class="
+                                button button_accent button_smooth
+                                registration__button
+                            "
+                        >
                             Sign up
                         </button>
                     </fieldset>

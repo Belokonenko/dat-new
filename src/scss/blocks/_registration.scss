@@ -6,10 +6,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 100px;
-    
+
+    @include tablet {
+        padding-top: 200px;
+    }
+
+    &__breadcrumbs {
+        @include tablet {
+            margin-bottom: 18px;
+        }
+    }
+
     &__title {
         margin-bottom: 10px;
-
     }
 
     &__descr {
@@ -17,6 +26,12 @@
         width: 87%;
         margin-inline: auto;
         margin-bottom: 35px;
+
+        @include tablet {
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
     }
 
     &__form {
@@ -29,6 +44,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px 30px;
+
+        @include tablet {
+            grid-template-columns: 1fr;
+            gap: 20px 30px;
+        }
     }
 
     &__fild {
@@ -51,17 +71,16 @@
         border-radius: 90px;
         padding: 0 19px 0 19px;
         background-color: transparent;
-       
+
         font-weight: 400;
         font-size: 16px;
         color: var(--color-text-dark-alt);
     }
-    
+
     &__input:placeholder {
         font-weight: 400;
         font-size: 16px;
         color: var(--color-text-dark-alt);
-
     }
     &__agree {
         display: flex;
@@ -75,75 +94,63 @@
         color: var(--color-text-dark-alt);
     }
 
+    &__agree-href {
+        color: var(--color-main-light);
+    }
+
     &__password,
     &__confirm-password,
-    &__agree, 
+    &__agree,
     &__button {
         width: 100%;
         grid-column: 1/-1;
     }
-    
+
+    // checkbox-castom
+
+    &__lable {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__lable:hover input ~ .registration__checkmark {
+        background-color: #ccc;
+    }
+
+    &__lable input:checked ~ .registration__checkmark {
+        background-color: #2196f3;
+    }
+
+    &__checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+    }
+
+    &__checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    &__lable input:checked ~ .registration__checkmark :after {
+        display: block;
+    }
+    &__lable .registration__checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
 }
-
-// .registration__form-name {
-//     display: flex;
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-// }
-
-// .registration__form-name input {
-//     max-width: 255px;
-// }
-// .registration__form-name input,
-// .registration__form input {
-//     margin-bottom: 20px;
-//     border-radius: 90px;
-//     border: 1px solid rgba(0, 0, 0, 0.2);
-//     background: #fff;
-//     padding: 10px 19px;
-// }
-// .registration__form input {
-//     width: 100%;
-// }
-// .registration__form-btn {
-//     width: 100%;
-//     margin-top: 20px;
-// }
-// .registration__filter-input-checkbox label {
-//     display: none;
-// }
-// .registration____filter-checkbox {
-//     padding-left: 27px;
-// }
-// .registration__filter-option label {
-//     position: relative;
-//     cursor: pointer;
-//     padding-left: 27px;
-// }
-// .registration__filter-input-checkbox:checked {
-//     color: #84be51;
-// }
-// .registration__filter-input-checkbox:hover + label,
-// .registration__filter-input-checkbox:focus + label {
-//     color: green;
-//     transition: all 0.5s ease;
-// }
-// .registration__filter-input-checkbox + label::before {
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     bottom: 72px;
-//     width: 16px;
-//     height: 16px;
-//     border-radius: 3px;
-//     border: 1px solid #84be51;
-// }
-// .registration__filter-input-checkbox:checked + label::after {
-//     content: "";
-//     position: absolute;
-//     bottom: 68px;
-//     left: -3px;
-//     width: 29px;
-//     height: 29px;
-//     background-image: url(../images/Checkbox.svg);
-// }
