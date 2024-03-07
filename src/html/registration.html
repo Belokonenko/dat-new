@@ -7,10 +7,8 @@
 
         <main class="main">
             <section class="registration">
-                <h1 class="registration__title">Registration</h1>
-
                 <div class="container">
-                    <div class="breadcrumbs categories__breadcrumbs">
+                    <div class="breadcrumbs registration__breadcrumbs">
                         <ul class="breadcrumbs__list">
                             <li class="breadcrumbs__item">
                                 <a
@@ -38,7 +36,17 @@
                             </li>
                         </ul>
                     </div>
-                    <p class="registration__descr">
+
+                    <h1
+                        class="
+                            title title_leaf-l title_leaf-r title_size_l
+                            registration__title
+                        "
+                    >
+                        Registration
+                    </h1>
+
+                    <p class="text text_dark registration__descr">
                         Log in to use all the features of your personal account:
                         order tracking, subscription settings, social media
                         connections, and more. We never and under no
@@ -53,12 +61,12 @@
                     action=""
                     onsubmit="return validateForm()"
                 >
-                    <fieldset>
-                        <legend>Registration</legend>
-                        <div>
+                    <fieldset class="registration__fildset">
+                        <legend class="visually-hidden">Registration</legend>
+                        <div class="registration__fild">
                             <input
+                                class="name registration__input"
                                 name="name"
-                                class="name"
                                 id="name"
                                 type="text"
                                 placeholder="Name"
@@ -71,10 +79,10 @@
                             <span id="name_message_err"></span>
                         </div>
 
-                        <div>
+                        <div class="registration__fild">
                             <input
-                                name="surname"
-                                class="surname"
+                                class="surname registration__input"
+                                name="surname "
                                 id="surname"
                                 type="text"
                                 placeholder="Surname"
@@ -87,9 +95,9 @@
                             <span id="surname_message_err"></span>
                         </div>
 
-                        <div>
+                        <div class="registration__fild">
                             <input
-                                class="email"
+                                class="email registration__input"
                                 id="email"
                                 name="email"
                                 type="email"
@@ -101,9 +109,9 @@
                             <span id="email_message_err"></span>
                         </div>
 
-                        <div>
+                        <div class="registration__fild">
                             <input
-                                class="phone-input"
+                                class="phone-input registration__input"
                                 name="phone-input"
                                 id="phone-input"
                                 type="tel"
@@ -113,15 +121,14 @@
                                 maxlength="20"
                                 spellcheck="false"
                                 pattern="\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}"
-
-                                title="+380(xx)xxxxxxx"
+                                title="+380 (xx) xxx-xx-xx"
                             />
                             <span id="phone-input_message_err"></span>
                         </div>
 
-                        <div>
+                        <div class="registration__fild registration__password">
                             <input
-                                class="password"
+                                class="password registration__input"
                                 id="password"
                                 name="password"
                                 type="password"
@@ -132,9 +139,9 @@
                             />
                             <span id="password_message_err"></span>
                         </div>
-                        <div>
+                        <div class="registration__fild  registration__confirm-password">
                             <input
-                                class="confirm-password"
+                                class="confirm-password registration__input"
                                 id=" confirm-password"
                                 name="confirmPassword"
                                 type="password"
@@ -146,7 +153,7 @@
                             <span id="confirm-password_message_err"></span>
                         </div>
 
-                        <p>
+                        <div class="registration__fild registration__agree">
                             <input
                                 class="input-checkbox filter-input"
                                 type="checkbox"
@@ -158,9 +165,9 @@
                                 >I agree to the processing and protection of
                                 <a href="">personal data</a></label
                             >
-                        </p>
+                        </div>
 
-                        <button class="btn registration__form-btn">
+                        <button class="button button_accent button_smooth registration__button ">
                             Sign up
                         </button>
                     </fieldset>
