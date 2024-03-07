@@ -5,8 +5,10 @@ import seeds from "./modules/seeds";
 import navProd from "./modules/navProd";
 import scrollToTop from "./modules/scrollToTop";
 import validateName from "./modules/validateName";
-import validateNameUpper from "./modules/validateNameUpper";
-import validateNoSpaces from "./modules/validateNoSpaces";
+import maskPhone from "./modules/maskPhone";
+import validatePassword from "./modules/validatePassword";
+import validateAllFilds from "./modules/validateAllFilds";
+import validateEmail from "./modules/validateMail";
 
 document.addEventListener("DOMContentLoaded", () => {
     buttonBurger("dropdown-panel");
@@ -14,7 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
     seeds();
     navProd();
     scrollToTop();
+    validateEmail("email");
     validateName("name");
-    validateNameUpper("name");
-    // validateNoSpaces("name");
+    validateName("surname");
+    validatePassword("password");
+    validateAllFilds();
 });

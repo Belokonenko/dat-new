@@ -26,11 +26,7 @@
         "webpack-stream": "^7.0.0"
     },
     "babel": {
-        "presets": [
-            "@babel/preset-env"
-        ]
+        "presets": ["@babel/preset-env"]
     },
-    "browserslist": [
-        "last 5 versions"
-    ]
+    "browserslist": ["last 5 versions"]
 }

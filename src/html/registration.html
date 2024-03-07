@@ -65,81 +65,105 @@
                                 required
                                 minlength="2"
                                 maxlength="50"
-                                spellcheck="true"
+                                spellcheck="false"
+                                title="Name"
                             />
                             <span id="name_message_err"></span>
                         </div>
+
+                        <div>
+                            <input
+                                name="surname"
+                                class="surname"
+                                id="surname"
+                                type="text"
+                                placeholder="Surname"
+                                required
+                                minlength="2"
+                                maxlength="50"
+                                spellcheck="false"
+                                title="Surname"
+                            />
+                            <span id="surname_message_err"></span>
+                        </div>
+
+                        <div>
+                            <input
+                                class="email"
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="E-mail"
+                                required
+                                spellcheck="false"
+                                title="example@mail.com"
+                            />
+                            <span id="email_message_err"></span>
+                        </div>
+
+                        <div>
+                            <input
+                                class="phone-input"
+                                name="phone-input"
+                                id="phone-input"
+                                type="tel"
+                                placeholder="Phone"
+                                required
+                                minlength="5"
+                                maxlength="20"
+                                spellcheck="false"
+                                pattern="\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}"
+
+                                title="+380(xx)xxxxxxx"
+                            />
+                            <span id="phone-input_message_err"></span>
+                        </div>
+
+                        <div>
+                            <input
+                                class="password"
+                                id="password"
+                                name="password"
+                                type="password"
+                                placeholder="Password"
+                                required
+                                minlength="6"
+                                title="please enter your password"
+                            />
+                            <span id="password_message_err"></span>
+                        </div>
+                        <div>
+                            <input
+                                class="confirm-password"
+                                id=" confirm-password"
+                                name="confirmPassword"
+                                type="password"
+                                placeholder="Confirm password"
+                                required
+                                minlength="6"
+                                title="please repeat your password"
+                            />
+                            <span id="confirm-password_message_err"></span>
+                        </div>
+
+                        <p>
+                            <input
+                                class="input-checkbox filter-input"
+                                type="checkbox"
+                                name="agree"
+                                id="agree"
+                                required
+                            />
+                            <label for="agree"
+                                >I agree to the processing and protection of
+                                <a href="">personal data</a></label
+                            >
+                        </p>
+
+                        <button class="btn registration__form-btn">
+                            Sign up
+                        </button>
                     </fieldset>
-
-                    <!-- <div class="registration__form-name"> -->
-                    <!--     <input -->
-                    <!--         type="text" -->
-                    <!--         placeholder="Surname" -->
-                    <!--         required -->
-                    <!--         minlength="2" -->
-                    <!--         maxlength="50" -->
-                    <!--         spellcheck="true" -->
-                    <!--     /> -->
-                    <!--     <input -->
-                    <!--         type="tel" -->
-                    <!--         placeholder="Phone" -->
-                    <!--         required -->
-                    <!--         minlength="10" -->
-                    <!--         maxlength="15" -->
-                    <!--         spellcheck="false" -->
-                    <!--     /> -->
-                    <!--     <input -->
-                    <!--         type="email" -->
-                    <!--         placeholder="E-mail" -->
-                    <!--         required -->
-                    <!--         spellcheck="false" -->
-                    <!--     /> -->
-                    <!-- </div> -->
-                    <!-- <input -->
-                    <!--     type="password" -->
-                    <!--     placeholder="Password" -->
-                    <!--     required -->
-                    <!--     minlength="6" -->
-                    <!-- /> -->
-                    <!-- <input -->
-                    <!--     type="password" -->
-                    <!--     placeholder="Confirm password" -->
-                    <!--     required -->
-                    <!--     minlength="6" -->
-                    <!-- /> -->
-                    <!--<p -->
-                    <!--    class=" -->
-                    <!--        registration____filter-option -->
-                    <!--        registration____filter-checkbox -->
-                    <!--    " -->
-                    <!--> -->
-                    <!--    <input -->
-                    <!--        class=" -->
-                    <!--            <!-1- -->
-                    <!--            visually-hidden -->
-                    <!--            -1-> -->
-                    <!--            registration__filter-input-checkbox -->
-                    <!--            registration__filter-input -->
-                    <!--        " -->
-                    <!--        type="checkbox" -->
-                    <!--        name="agree" -->
-                    <!--        id="filter-agree" -->
-                    <!--        required -->
-                    <!--    /> -->
-                    <!--    <label for="filter-agree" -->
-                    <!--        >I agree to the processing and protection of -->
-                    <!--        <a href="">personal data</a></label -->
-                    <!--    > -->
-                    <!--</p> -->
-
-                    <!-- <label> -->
-                    <!--     >I agree to the processing and protection of personal -->
-                    <!--     data -->
-                    <!--     <input type="checkbox" /> -->
-                    <!-- </label> -->
-
-                    <!-- <span id="error-message" style="color: red"></span> -->
-                    <button class="btn registration__form-btn">Sign up</button>
                 </form>
             </section>
         </main>
