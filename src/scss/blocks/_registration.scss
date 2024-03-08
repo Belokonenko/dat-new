@@ -58,11 +58,8 @@
         border-radius: 90px;
         border: 1px solid rgba(0, 0, 0, 0.2);
 
-        & span {
-            position: absolute;
-        }
     }
-
+    
     &__input {
         appearance: none;
         height: 100%;
@@ -80,6 +77,22 @@
     &__input:focus{
             outline: 2px solid var(--color-main-light) ;
     }
+    
+    &__input.error {
+        border: 1px solid red;
+        outline: none;
+    }
+    
+    &__error {
+            display: flex;
+            position: absolute;
+            left: 0;
+            bottom: -40%;
+            font-size: 10px;
+            color: red;
+    }
+
+    
 
     &__input:placeholder {
         font-weight: 400;

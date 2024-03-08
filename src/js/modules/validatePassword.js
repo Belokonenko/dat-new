@@ -13,23 +13,23 @@ export default function validatePassword(passId) {
 
         switch (true) {
             case /\s/.test(password):
-                errorMessage = "Password cannot contain whitespace characters";
+                errorMessage = "! Password cannot contain whitespace characters";
                 break;
             case forbiddenChars.test(password):
-                errorMessage = "Password cannot contain special characters";
+                errorMessage = "! Password cannot contain special characters";
                 break;
             case password.length < 6:
-                errorMessage = "Password must be at least 6 characters long";
+                errorMessage = "! Password must be at least 6 characters long";
                 break;
             case !/\d/.test(password):
-                errorMessage = "Password must contain at least one digit";
+                errorMessage = "! Password must contain at least one digit";
                 break;
             case hasTags:
-                errorMessage = "Password cannot contain HTML tags";
+                errorMessage = "! Password cannot contain HTML tags";
                 break;
             case !/[A-Z]/.test(password):
                 errorMessage =
-                    "Password must contain at least one uppercase letter";
+                    "! Password must contain at least one uppercase letter";
                 break;
             default:
                 errorMessage = "";

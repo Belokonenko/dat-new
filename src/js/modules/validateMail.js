@@ -8,7 +8,7 @@ export default function validateEmail(mailId) {
         const email = emailInput.value.trim();
 
         if (!emailPattern.test(email)) {
-            errorMessage.textContent = "Please enter a valid email address example@mail.com";
+            errorMessage.textContent = "! Enter a valid email example@mail.com";
             emailInput.classList.add("error");
         } else {
             errorMessage.textContent = "";

@@ -65,6 +65,7 @@
                 >
                     <fieldset class="registration__fildset">
                         <legend class="visually-hidden">Registration</legend>
+                        
                         <div class="registration__fild">
                             <input
                                 class="name registration__input"
@@ -78,7 +79,7 @@
                                 spellcheck="false"
                                 title="Name"
                             />
-                            <span id="name_message_err"></span>
+                            <span class="registration__error" id="name_message_err"></span>
                         </div>
 
                         <div class="registration__fild">
@@ -94,7 +95,7 @@
                                 spellcheck="false"
                                 title="Surname"
                             />
-                            <span id="surname_message_err"></span>
+                            <span class="registration__error" id="surname_message_err"></span>
                         </div>
 
                         <div class="registration__fild">
@@ -108,7 +109,7 @@
                                 spellcheck="false"
                                 title="example@mail.com"
                             />
-                            <span id="email_message_err"></span>
+                            <span class="registration__error" id="email_message_err"></span>
                         </div>
 
                         <div class="registration__fild">
@@ -125,7 +126,7 @@
                                 pattern="\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}"
                                 title="+380 (xx) xxx-xx-xx"
                             />
-                            <span id="phone-input_message_err"></span>
+                            <span class="registration__error" id="phone-input_message_err"></span>
                         </div>
 
                         <div class="registration__fild registration__password">
@@ -139,7 +140,7 @@
                                 minlength="6"
                                 title="please enter your password"
                             />
-                            <span id="password_message_err"></span>
+                            <span class="registration__error" id="password_message_err"></span>
                         </div>
                         <div
                             class="
@@ -157,7 +158,7 @@
                                 minlength="6"
                                 title="please repeat your password"
                             />
-                            <span id="confirm-password_message_err"></span>
+                            <span class="registration__error" id="confirm-password_message_err"></span>
                         </div>
 
                         <div class="registration__fild registration__agree">
