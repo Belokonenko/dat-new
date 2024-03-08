@@ -1,5 +1,3 @@
-import validateName from "./validateName";
-
 export default function validateAllFilds() {
 
     
@@ -9,7 +7,7 @@ export default function validateAllFilds() {
     const passwordInput = document.getElementById("password");
     const confirmPasswordInput = document.getElementById("confirm-password");
     const agreeCheckbox = document.getElementById("agree");
-    const signUpButton = document.querySelector(".registration__form-btn");
+    const signUpButton = document.querySelector(".registration__button");
 
     // // Функция для проверки корректности имени
     // function validateName() {
@@ -44,7 +42,7 @@ export default function validateAllFilds() {
     // Обработчик события клика по кнопке "Sign up"
     signUpButton.addEventListener("click", function(event) {
         // Вызываем все функции валидации
-        // validateName("name");
+        // validateName();
         validateSurname();
         validatePhone();
         validatePassword();

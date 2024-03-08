@@ -22,4 +22,5 @@ document.addEventListener("DOMContentLoaded", () => {
     validateName("surname");
     validatePassword("password");
     validateAllFilds();
+    // maskPhone();
 });

@@ -2,18 +2,15 @@ export default function maskPhone() {
     const phoneInput = document.getElementById("phone-input");
 
     phoneInput.addEventListener("input", () => {
-        const value = phoneInput.value.replace(/\D/g, "").substring(0, 12);
+        console.log('maskPhone')
+        let value = phoneInput.value.replace(/\D/g, "");
         let formattedValue = "";
 
-        if (value.length > 0) {
-            formattedValue = "+";
-
-            for (let i = 0; i < value.length; i++) {
-                if (i === 3 || i === 5) {
-                    formattedValue += " ";
-                }
-                formattedValue += value[i];
-            }
+        if (/^\+380\(\d{2}\)\d{3}-\d{2}-\d{2}$/.test(value)) {
+            formattedValue = value;
+        } else {
+            // Format the input according to the pattern
+            formattedValue = value.substring(0, 12).replace(/^(\d{3})(\d{2})(\d{3})(\d{2})(\d{2})$/, "+380 ($1) $3-$4-$5");
         }
 
         phoneInput.value = formattedValue;
