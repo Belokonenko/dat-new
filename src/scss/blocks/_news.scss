@@ -1,7 +1,6 @@
 .news {
     margin-top: 53px;
     margin-bottom: 80px;
-    padding: 250px 0 0 0;
 
     &__content {
         margin-bottom: 116px;
@@ -36,14 +35,20 @@
     }
 
     &__item-date {
-        color: #84c551;
-        font-weight: 600;
-        border-radius: 0px 20px 20px 0px;
-        background: #fff;
-        padding: 6px 12px;
         position: absolute;
         left: 0;
-        top: 27px;
+        top: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 20px 20px 0px;
+        width: 90px;
+        height: 29px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--color-main-light);
+        background: var(--color-bg-alpha);
     }
 
     &__item-title {
@@ -54,10 +59,18 @@
     }
 
     &__item-descr {
-        margin-bottom: 13px;
+        margin-bottom: 10px;
+    }
+
+    &__item {
+        position: relative;
+        padding-bottom: 28px;
     }
 
     &__item-link {
+        position: absolute;
+        bottom: 0;
+        left: 0;
         display: flex;
         align-items: center;
         gap: 5px;
@@ -65,7 +78,7 @@
         color: var(--color-main-light);
         font-weight: 700;
         font-size: 16px;
-        
+
         &::before {
             position: absolute;
             top: 0;

@@ -23,6 +23,10 @@
     // min-height: var(--header-min-height);
 }
 
+.main-padding {
+   padding-top: var(--header-min-height); 
+}
+
 
 ul {
     margin: 0;
