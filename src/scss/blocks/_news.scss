@@ -5,9 +5,15 @@
     &__content {
         margin-bottom: 116px;
     }
-
+    
+    &__breadcrumbs {
+        justify-content: center;
+    }
+    
     &__list {
         display: grid;
+        align-items: stretch;
+        grid-auto-rows: minmax(350px, auto);
         grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
         gap: 25px;
         width: 100%;
@@ -91,78 +97,5 @@
 
     &__link-icon {
         fill: currentColor;
-    }
-
-    &__item-link::after {
-        position: absolute;
-        content: "";
-        // background-image: url(../images/arrownewssvg.svg);
-        width: 12px;
-        height: 12px;
-        top: 5px;
-        right: -20px;
-    }
-
-    &__catalog-tablist {
-        display: flex;
-        width: 344px;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-top: 47px;
-    }
-
-    &__catalog-tab {
-        border-radius: 50%;
-        border: 1px solid #e74e13;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #e74e13;
-        font-size: 14px;
-    }
-
-    &__catalog-tab--active,
-    &__catalog-tab:hover {
-        color: #fff;
-        border: 1px solid #e74e13;
-        background: #e74e13;
-        box-shadow: 0px 5px 14px 0px rgba(140, 50, 19, 0.3);
-        transition: all 0.5s ease;
-    }
-
-    &__btn-arrow-prev {
-        margin-right: 25px;
-    }
-
-    &__btn-arrow-next {
-        margin-left: 25px;
-    }
-
-    &__btn-arrow-prev,
-    &__btn-arrow-next {
-        border-radius: 50%;
-        border: 1px solid #e74e13;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #e74e13;
-        background-color: transparent;
-    }
-
-    &__btn-arrow-prev:hover,
-    &__btn-arrow-next:hover {
-        border: 1px solid #e74e13;
-        background: #e74e13;
-        transition: all 0.5s ease;
-    }
-
-    &__btn-arrow-prev:hover path,
-    &__btn-arrow-next:hover path {
-        fill: #fff;
-        transition: all 0.5s ease;
     }
 }

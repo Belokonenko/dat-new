@@ -25,8 +25,11 @@
 
 .main-padding {
    padding-top: var(--header-min-height); 
+   
+   @include tablet {
+        padding-top: 150px;
+   }
 }
-
 
 ul {
     margin: 0;
