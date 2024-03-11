@@ -38,4 +38,14 @@
     &__text {
         margin-bottom: 20px;
     }
+
+    &__link {
+        text-decoration: underline;
+        
+        &:hover {
+            color: var(--color-main-light);
+            transition: --transition-duration ;
+        }
+    }
+
 }
