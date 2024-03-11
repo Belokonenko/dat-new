@@ -2,7 +2,6 @@
 //     outline: 1px solid rgba(244, 0, 0, 0.5);
 //     outline-offset: -1px;}
 
-
 .page-html {
     scroll-behavior: smooth;
     height: 100%;
@@ -12,9 +11,12 @@
     display: flex;
     flex-direction: column;
     // height: 100%;
-    
+
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-text-dark);
+    line-height: 1.5;
 }
 
 .main {
@@ -24,11 +26,11 @@
 }
 
 .main-padding {
-   padding-top: var(--header-min-height); 
-   
-   @include tablet {
+    padding-top: var(--header-min-height);
+
+    @include tablet {
         padding-top: 150px;
-   }
+    }
 }
 
 ul {
@@ -37,7 +39,7 @@ ul {
     list-style: none;
 }
 
-a, 
+a,
 button,
 input,
 textarea,
@@ -114,6 +116,3 @@ svg * {
         scroll-behavior: auto !important;
     }
 }
-
-
-

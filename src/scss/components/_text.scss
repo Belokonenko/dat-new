@@ -1,28 +1,19 @@
 .text {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: rgba(0, 0, 0, 0.5);
+    &_faded {
+        color: rgba(0, 0, 0, 0.5);
+    }
 
     &_accent {
-        font-family: var(--color-main);
         font-weight: 700;
-        font-size: 16px;
-        color: #1e6140;
+        color: var(--color-main);
     }
 
     &_light {
         color: var(--color-text-light);
     }
 
-    &_dark {
-        color: var(--color-text-dark);
-    }
-    
+
     &_strong {
         font-weight: 700;
-        font-size: 16px;
     }
 }
