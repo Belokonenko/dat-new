@@ -1,0 +1,41 @@
+.payment {
+    &__breadcrumbs {
+        margin-top: 47px;
+    }
+
+    &__title {
+        margin-bottom: 21px;
+        
+        @include tablet {
+            margin-bottom: 28px;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 30px;
+
+        @include tablet {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+    }
+    
+    &__subtitle {
+        display: block;
+        margin-bottom: 17px;
+    }
+    
+    &__item {
+        margin-bottom: 15px;
+        margin-left: 21px;
+    }
+    
+    &__text-strong {
+    }
+    
+    &__text {
+        margin-bottom: 20px;
+    }
+}

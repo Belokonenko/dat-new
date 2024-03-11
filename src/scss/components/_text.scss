@@ -12,13 +12,17 @@
         font-size: 16px;
         color: #1e6140;
     }
-    
+
     &_light {
         color: var(--color-text-light);
-
     }
 
     &_dark {
         color: var(--color-text-dark);
+    }
+    
+    &_strong {
+        font-weight: 700;
+        font-size: 16px;
     }
 }
