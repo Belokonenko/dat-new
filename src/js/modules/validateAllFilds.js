@@ -43,11 +43,11 @@ export default function validateAllFilds() {
     signUpButton.addEventListener("click", function(event) {
         // Вызываем все функции валидации
         // validateName();
-        validateSurname();
-        validatePhone();
-        validatePassword();
-        validateConfirmPassword();
-        validateAgreement();
+        // validateSurname();
+        // validatePhone();
+        // validatePassword();
+        // validateConfirmPassword();
+        // validateAgreement();
 
         // Предотвращаем отправку формы, если есть ошибки валидации
         if (document.querySelector(".error")) {
