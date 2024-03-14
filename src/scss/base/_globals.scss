@@ -25,11 +25,11 @@
     // min-height: var(--header-min-height);
 }
 
-.main-padding {
-    padding-top: var(--header-min-height);
+.content-padding {
+    padding-top: calc(var(--header-min-height) + 50px) ;
 
     @include tablet {
-        padding-top: 150px;
+        padding-top: 210px;
     }
 }
 

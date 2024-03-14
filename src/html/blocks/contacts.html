@@ -1,4 +1,4 @@
-<section class="contacts">
+<section class="contacts content-padding">
     <div class="container">
         <div class="breadcrumbs contacts__breadcrumbs">
             <ul class="breadcrumbs__list">
@@ -118,7 +118,7 @@
             </div>
         </div>
 
-        <section class="write">
+        <div class="write">
             <h2
                 class="
                     title title_leaf-l title_leaf-r title_size_l
@@ -135,7 +135,7 @@
             </p>
 
             <form
-                class="write__form form-registration"
+                class="write__form form-registration form-registration__form"
                 action=""
                 onsubmit="return validateForm()"
             >
@@ -217,20 +217,26 @@
                         ></span>
                     </div>
 
-                    <div class="form-registration__fild">
+                    <div
+                        class="
+                            form-registration__fild
+                            form-registration__fild-textaria
+                        "
+                    >
                         <textarea
-                            class="form-registration__textaria"
-                            name="textarea"
-                            id="textaria"
+                            class="
+                                form-registration__textaria
+                                form-registration__input
+                            "
+                            name="message"
+                            id="message"
                             placeholder="Write to Us"
-                            required
                             spellcheck="true"
-                            title="Write to Us"
-                        >
-                        </textarea>
+                            title="Your Message"
+                        ></textarea>
                         <span
                             class="form-registration__error"
-                            id="name_message_err"
+                            id="message_error"
                         ></span>
                     </div>
 
@@ -244,8 +250,6 @@
                     </button>
                 </fieldset>
             </form>
-
-            <button class="" type="submit">Send</button>
-        </section>
+        </div>
     </div>
 </section>
