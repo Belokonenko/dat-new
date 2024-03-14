@@ -29,27 +29,29 @@
                             button button_round button-round button_theme_dark
                         "
                     >
-                        <svg class="" width="16" height="20">
+                        <svg class="button-round__img" width="16" height="20">
                             <use xlink:href="#point-light"></use>
                         </svg>
                     </button>
-                    <p>
+                    <address>
                         Ukraine, Vinnytsia region,<br />
                         Vinnytsia, 122, Khmelnytskyi highway
-                    </p>
+                    </address>
                 </li>
+
                 <li class="contacts__">
                     <button
                         class="
                             button button_round button-round button_theme_dark
                         "
                     >
-                        <svg class="" width="20" height="20">
+                        <svg class="button-round__img" width="20" height="20">
                             <use xlink:href="#back-time"></use>
                         </svg>
                     </button>
                     <p>
-                        Mon-Fri <time datetime="09:00">9:00</time> -
+                        Mon-Fri
+                        <time datetime="09:00">9:00</time> -
                         <time datetime="18:00">18:00</time>
                     </p>
                 </li>
@@ -60,7 +62,7 @@
                             button button_round button-round button_theme_dark
                         "
                     >
-                        <svg class="" width="16" height="16">
+                        <svg class="button-round__img" width="16" height="16">
                             <use xlink:href="#mail"></use>
                         </svg>
                     </button>
@@ -68,6 +70,7 @@
                     <a href="email:shop@ukrsemena.com">shop@ukrsemena.com</a>
                 </li>
             </ul>
+
             <h3 class="contacts__">
                 Department of sales and agronomic support
             </h3>
@@ -75,27 +78,35 @@
                 If you need help with placing an order, advice on the use of
                 products, have questions about your orders, contact here:
             </p>
+
             <ul class="contacts__">
                 <li class="contacts__">
                     <button
                         class="
-                            button button_round button-round button_theme_dark
+                            button 
+                            button_round 
+                            button-round 
+                            button_theme_dark
                         "
                     >
-                        <svg class="" width="20" height="20">
+                        <svg class="button-round__img" width="20" height="20">
                             <use xlink:href="#back-time"></use>
                         </svg>
                     </button>
-
-                    <p>Mon-Sun <br />9.00-17.00</p>
+                    Mon-Fri 
+                    <time datetime="09:00">9:00</time> -
+                    <time datetime="18:00">17:00</time>
                 </li>
                 <li class="contacts__">
                     <button
                         class="
-                            button button_round button-round button_theme_dark
+                            button 
+                            button_round 
+                            button-round 
+                            button_theme_dark
                         "
                     >
-                        <svg class="" width="16" height="16">
+                        <svg class="button-round__img" width="16" height="16">
                             <use xlink:href="#phone"></use>
                         </svg>
                     </button>
@@ -108,7 +119,7 @@
                             button button_round button-round button_theme_dark
                         "
                     >
-                        <svg class="" width="16" height="16">
+                        <svg class="button-round__img" width="16" height="16">
                             <use xlink:href="#phone"></use>
                         </svg>
                     </button>
@@ -128,16 +139,16 @@
             </p>
 
             <form
-                class="Write__form"
+                class="Write__form form-registration"
                 action=""
                 onsubmit="return validateForm()"
             >
-                <fieldset class="registration__fildset">
+                <fieldset class="form-registration__fildset">
                     <legend class="visually-hidden">Write to Us</legend>
 
-                    <div class="registration__fild">
+                    <div class="form-registration__fild">
                         <input
-                            class="name registration__input"
+                            class="name form-registration__input"
                             name="name"
                             id="name"
                             type="text"
@@ -149,14 +160,14 @@
                             title="Name"
                         />
                         <span
-                            class="registration__error"
+                            class="form-registration__error"
                             id="name_message_err"
                         ></span>
                     </div>
 
-                    <div class="registration__fild">
+                    <div class="form-registration__fild">
                         <input
-                            class="surname registration__input"
+                            class="surname form-registration__input"
                             name="surname "
                             id="surname"
                             type="text"
@@ -168,14 +179,14 @@
                             title="Surname"
                         />
                         <span
-                            class="registration__error"
+                            class="form-registration__error"
                             id="surname_message_err"
                         ></span>
                     </div>
 
-                    <div class="registration__fild">
+                    <div class="form-registration__fild">
                         <input
-                            class="email registration__input"
+                            class="email form-registration__input"
                             id="email"
                             name="email"
                             type="email"
@@ -185,16 +196,16 @@
                             title="example@mail.com"
                         />
                         <span
-                            class="registration__error"
+                            class="form-registration__error"
                             id="email_message_err"
                         ></span>
                     </div>
 
                     <!-- pattern="\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}" -->
                     <!-- title="+380 (xx) xxx-xx-xx" -->
-                    <div class="registration__fild">
+                    <div class="form-registration__fild">
                         <input
-                            class="phone-input registration__input"
+                            class="phone-input form-registration__input"
                             name="phone-input"
                             id="phone-input"
                             type="tel"
@@ -205,18 +216,16 @@
                             spellcheck="false"
                         />
                         <span
-                            class="registration__error"
+                            class="form-registration__error"
                             id="phone-input_message_err"
                         ></span>
                     </div>
 
-                    <div class="registration__fild">
+                    <div class="form-registration__fild">
                         <textarea
-                            class="registration__text-input"
+                            class="form-registration__textaria"
                             name="textarea"
                             id="textaria"
-                            cols="30"
-                            rows="10"
                             placeholder="Write to Us"
                             required
                             spellcheck="true"
@@ -224,7 +233,7 @@
                         >
                         </textarea>
                         <span
-                            class="registration__error"
+                            class="form-registration__error"
                             id="name_message_err"
                         ></span>
                     </div>
@@ -232,7 +241,7 @@
                     <button
                         class="
                             button button_accent button_smooth
-                            registration__button
+                            form-registration__button
                         "
                     >
                         Sign up
