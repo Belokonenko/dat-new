@@ -1,5 +1,10 @@
 .contacts {
     background-color: var(--color-bg-light);
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
     &__info-block {
         position: relative;
         display: grid;
@@ -7,7 +12,7 @@
         gap: 0 20px;
         grid-auto-rows: min-content;
         border-radius: 20px;
-        min-height: 317px;
+        min-height: 280px;
         box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
         padding: 40px;
         background: var(--color-bg-alpha);
@@ -46,11 +51,13 @@
     &__dec-line {
         position: absolute;
         top: 40%;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 0.1px solid rgba(0, 0, 0, 0.05);
         width: 100%;
+        
         @include tablet {
             top: 35%;
         }
+        
         @include tablet {
             top: 37%;
         }
@@ -58,19 +65,22 @@
 
     &__info-top {
         margin-bottom: 68px;
+        
         @include tablet {
             margin-bottom: 50px;
         }
     }
     &__info-title {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
+        
         @include tablet {
             margin-bottom: 0px;
         }
     }
 
     &__info-desc {
-        margin-bottom: 35px;
+        margin-bottom: 25px;
+        
         @include tablet {
             margin-bottom: 0px;
         }
@@ -86,7 +96,7 @@
     padding-bottom: 120px;
     &__desc {
         max-width: 641px;
-        margin-inline: auto ;
+        margin-inline: auto;
         text-align: center;
         margin-bottom: 40px;
     }
