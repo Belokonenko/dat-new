@@ -1,5 +1,6 @@
 .marker {
     position: relative;
+    margin-left: 20px;
     &::before {
         position: absolute;
         left: -15px;
@@ -8,7 +9,7 @@
         width: 4px;
         aspect-ratio: 1;
         border-radius: 50%;
-        background-color: var(--color-text-dark);
+        background-color: currentColor;
 
         @include tablet {
             width: 2px;
@@ -19,6 +20,7 @@
         &::before {
             content: "";
             width: 2px;
+            top: 11px;
         }
     }
 }
