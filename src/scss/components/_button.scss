@@ -16,6 +16,12 @@
         }
     }
 
+    button__block-text {
+        @include hover {
+
+        }
+    }
+
     &_accent {
         display: flex;
         width: 219px;
