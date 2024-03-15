@@ -4,11 +4,13 @@
     height: 60px;
     width: 250px;
     border-radius: 20px;
-    background-color: inherit;
+    background-color: transparent;
     color: inherit;
 
     &_theme_lihgt {
-        background-color: var(--color-bg-alpha);
+        &:hover {
+            background-color: var(--color-bg-alpha);
+        }
     }
 
     &_theme_mob {
