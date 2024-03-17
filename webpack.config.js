@@ -4,7 +4,7 @@ const config = {
         index: './src/js/index.js',
         registration: './src/js/registration.js',
         contacts: './src/js/contacts.js',
-        // about: './src/js/about.js',
+        catalogContent: './src/js/catalogContent.js',
     },
     output: {
         filename: '[name].bundle.js',
