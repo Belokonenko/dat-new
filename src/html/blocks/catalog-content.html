@@ -33,41 +33,38 @@
             Plant protection
         </h1>
 
-        <!-- block num, button filter and sort -->
 
-        <div class="sort-wrap">
-            <!-- show prod num -->
-            <p class="catalog-prod__counter">
-                <span class="catalog-prod__counter-num">621</span>
+        <div class="sort">
+            
+            <p class="sort__counter">
                 products
+                <span class="catalog-prod__counter-num">621</span>
+                 shown
             </p>
 
-            <!-- button filter mob version -->
-            <button class="filter-btn-mob " hidden>Filter</button>
+            <button class="catalog-prod__btn-filter " hidden>Filter</button>
 
-            <!-- sort -->
-            <form class="sort-by">
-                <select class="sort">
-                    <option class="sort-options" value="" disabled selected>
-                        sort by
-                    </option>
-                    <option class="sort-options" value="price-low-to-high">
-                        Price: Low to High
-                    </option>
-                    <option class="sort-options" value="price-high-to-low">
-                        Price: High to Low
-                    </option>
-                    <option class="sort-options" value="popularity">
-                        Popularity
-                    </option>
-                </select>
-            </form>
+            <!-- <select class="sort__select"> -->
+            <!--     <option class="sort__options" value="" disabled selected> -->
+            <!--         sort by -->
+            <!--     </option> -->
+            <!--     <option class="sort__options" value="price-low-to-high"> -->
+            <!--         Price: Low to High -->
+            <!--     </option> -->
+            <!--     <option class="sort__options" value="price-high-to-low"> -->
+            <!--         Price: High to Low -->
+            <!--     </option> -->
+            <!--     <option class="sort__options" value="popularity"> -->
+            <!--         Popularity -->
+            <!--     </option> -->
+            <!-- </select> -->
+
+            @@include('./custom-select.html')
+
 
         </div>
 
-        <!-- filter panel and block cards products -->
         <div class="fliter-cards__wrap">
-            <!-- filter panel -->
             <div class="filter__wrap">
                     <ul class="list group-prod__list">
                         <li class="group-prod__item categories__item_active">

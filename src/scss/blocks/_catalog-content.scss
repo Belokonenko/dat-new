@@ -2,133 +2,138 @@
     position: relative;
     overflow: hidden;
     background-color: var(--color-bg-light);
+
+    /*decor-ellipse*/
+    &__dec-ell:nth-of-type(1) {
+        top: 3%;
+        transform: translateX(-50%);
+    }
+
+    &__dec-ell:nth-of-type(2) {
+        top: 0;
+        right: 0;
+        transform: translate(50%, -30%);
+    }
+
+    &__dec-ell:nth-of-type(3) {
+        top: 40%;
+        transform: translateX(-50%);
+    }
+
+    &__dec-ell:nth-of-type(4) {
+        right: 0;
+        top: 40%;
+        transform: translate(50%);
+    }
+
+    &__dec-ell:nth-of-type(5) {
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+
+    &__dec-ell:nth-of-type(6) {
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, 50%);
+    }
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__pagination {
+        margin-bottom: 17px;
+    }
+
+    &__title {
+        text-align: center;
+        margin: 0px 0 33px 0;
+    }
+
+    &__counter {
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__btn-filter {
+        @include tablet {
+            display: inline;
+        }
+    }
 }
 
-/*decor-ellipse*/
-.catalog-prod__dec-ell:nth-of-type(1) {
-    top: 3%;
-    transform: translateX(-50%);
+.cards-prod__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
-.catalog-prod__dec-ell:nth-of-type(2) {
-    top: 0;
-    right: 0;
-    transform: translate(50%, -30%);
-}
-
-.catalog-prod__dec-ell:nth-of-type(3) {
-    top: 40%;
-    transform: translateX(-50%);
-}
-
-.catalog-prod__dec-ell:nth-of-type(4) {
-    right: 0;
-    top: 40%;
-    transform: translate(50%);
-}
-
-.catalog-prod__dec-ell:nth-of-type(5) {
-    bottom: 0;
-    transform: translateX(-50%);
-}
-
-.catalog-prod__dec-ell:nth-of-type(6) {
-    right: 0;
-    bottom: 0;
-    transform: translate(50%, 50%);
-}
-
-.catalog-prod__wrap {
-    position: relative;
-}
-
-.catalog-prod__pagination {
-    margin-bottom: 17px;
-}
-
-.catalog-prod__title {
-    text-align: center;
-    margin: 0px 0 33px 0;
-}
-
-.catalog-prod__counter {
-    color: rgba(0, 0, 0, 0.5);
-    font-weight: 400;
-    line-height: normal;
-}
-
-.sort-wrap {
+.sort {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 7px;
-}
-
-/* Стили для обертки .sort-by */
-.sort-by {
-    position: relative;
-    display: inline-flex;
-    background-color: transparent;
-
-    /* Стили для псевдоэлемента ::before */
-    &::after {
-        content: "";
-        position: absolute;
-        right: 43px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 1px;
-        height: 28px;
-        background-color: rgba(0, 0, 0, 0.2);
+    
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 
-    /* Стили для псевдоэлемента ::before */
-    &::before {
-        content: url(img/arr-select-grey.svg);
-        position: absolute;
-        right: 16px;
-        top: 50%;
-        transform: translateY(-50%);
+    &__counter {
+        grid-column: 1/-1;
+        text-align: center;
+        order: 1;
+    }
+    
+    &__select {
+        position: relative;
+        appearance: none;
+        padding: 10px 60px 10px 30px;
+        min-width: 250px;
+        cursor: pointer;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        color: #484848;
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        background-color: transparent;
+
+        &:focus {
+            outline: 1px solid var(--color-main);
+        }
+
+        &:hover {
+            outline: 1px solid var(--color-main);
+        }
+    }
+
+    &__by {
+        position: relative;
+        display: inline-flex;
+        background-color: transparent;
+
+        @include tablet {
+            width: 100%;
+        }
+
+    }
+ 
+    &__options {
+        color: #484848;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
 }
 
-/* Стили для select.sort */
-.sort {
-    position: relative;
-    appearance: none; /* Убирает стандартный стиль браузера для select */
-    padding: 10px 60px 10px 30px;
-    min-width: 250px;
-    cursor: pointer;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-
-    color: #484848;
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    background-color: transparent;
-
-    &:focus {
-        outline: 1px solid var(--color-main);
-    }
-    &:hover {
-        outline: 1px solid var(--color-main);
-    }
-}
-
-/* Стили для option.sort-options */
-.sort-options {
-    color: #484848;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-/* wraper 2 bloks filter and cards*/
 .fliter-cards__wrap {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -139,8 +144,6 @@
         gap: 0px;
     }
 }
-
-/* group-prod */
 
 .group-prod {
     &__list {
@@ -179,8 +182,6 @@
     }
 }
 
-/* Custom Dropdown */
-
 .custom-dropdown {
     position: relative;
     width: 255px;
@@ -203,16 +204,10 @@
     cursor: pointer;
 }
 
-/* Styling for the selected group-prod in the dropdown */
 .dropdown-list .group-prod__item.active {
     color: #84c551;
     font-weight: 700;
 }
-///////////////////////////////
-
-/* group-prod */
-
-/* filter */
 
 .filter {
     position: relative;
@@ -227,6 +222,10 @@
         position: absolute;
         z-index: 1;
         transform: translateX(-120%);
+    }
+
+    & fieldset {
+        border: none;
     }
 
     &__btn {
@@ -257,15 +256,4 @@
             display: inline;
         }
     }
-}
-
-.filter fieldset {
-    border: none;
-}
-
-/* cards */
-.cards-prod__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
 }

@@ -5,6 +5,7 @@ import seeds from "./modules/seeds";
 import navProd from "./modules/navProd";
 import scrollToTop from "./modules/scrollToTop";
 import filter from "./modules/filter";
+import customSelect from "./modules/custom-select";
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("catalogContent");
@@ -14,4 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
     navProd();
     scrollToTop();
     // filter();
+    customSelect(); 
 });

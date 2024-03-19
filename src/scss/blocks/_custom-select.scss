@@ -1,0 +1,36 @@
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.select-styled {
+  background: #f2f2f2;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-options {
+  position: absolute;
+  display: none;
+  background: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow-y: auto;
+  max-height: 150px;
+  z-index: 1;
+}
+
+.select-options li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.select-options li:hover {
+  background: #f2f2f2;
+}
+
