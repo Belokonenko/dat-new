@@ -1,0 +1,21 @@
+<dialog id="modal" open>
+    <h2>Модальное окно</h2>
+    <p>Содержимое модального окна здесь...</p>
+    <button id="closeModal">Закрыть</button>
+</dialog>
+
+<button id="openModal">Открыть модальное окно</button>
+
+<script>
+    var openModalButton = document.getElementById("openModal");
+    var closeModalButton = document.getElementById("closeModal");
+    var modal = document.getElementById("modal");
+
+    openModalButton.addEventListener("click", function () {
+        modal.showModal();
+    });
+
+    closeModalButton.addEventListener("click", function () {
+        modal.close();
+    });
+</script>

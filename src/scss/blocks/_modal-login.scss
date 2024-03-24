@@ -1,0 +1,21 @@
+.modal-login {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    max-width: 1110px;
+    padding: 50px 95px 60px 95px;
+    margin: unset;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-bg-light);
+    border-radius: 1rem;
+    
+    &__title {
+        margin-bottom: 20px;
+    }
+    
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
