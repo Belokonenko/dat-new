@@ -1,11 +1,15 @@
 export default function modal() {
-  const btnLogin = document.querySelector('.login__enter');
+  
+    const btnOpenModal = document.querySelector('.login__enter');
   const modal = document.querySelector('.modal');
   const closeModalButton = document.querySelector('.modal__btn-close');
 
-  if (btnLogin) {
-    btnLogin.addEventListener('click', () => {
-      console.log(btnLogin);
+  if (btnOpenModal) {
+    btnOpenModal.addEventListener('click', event => {
+      const btnDate = event.target.getAttribute('data-info');
+      console.log(btnDate);
+
+      console.log(btnOpenModal);
       modal.showModal();
     });
 
@@ -14,4 +18,3 @@ export default function modal() {
     });
   }
 }
-
