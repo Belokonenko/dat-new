@@ -1,7 +1,7 @@
-export default function login() {
+export default function modal() {
   const btnLogin = document.querySelector('.login__enter');
-  const modal = document.querySelector('.modal-login');
-  const closeModalButton = document.getElementById('closeModalLogin');
+  const modal = document.querySelector('.modal');
+  const closeModalButton = document.querySelector('.modal__btn-close');
 
   if (btnLogin) {
     btnLogin.addEventListener('click', () => {
