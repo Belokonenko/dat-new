@@ -1,21 +1,21 @@
-<dialog id="modal" open>
-    <h2>Модальное окно</h2>
-    <p>Содержимое модального окна здесь...</p>
-    <button id="closeModal">Закрыть</button>
+<dialog class="modal modal-basket"  >
+  <h2 class="modal-login__title title title_leaf-l title_leaf-r title_size_l">Basket</h2>
+
+  <form class="modal-login__form">
+    <div class="form-registration__fild">
+      <input class="email form-registration__input" id="email" name="email" type="email" placeholder="E-mail" required="" spellcheck="false" title="example@mail.com" />
+      <span class="form-registration__error" id="email_message_err"></span>
+    </div>
+
+    <div class="form-registration__fild form-registration__password">
+      <input class="password form-registration__input" id="password" name="password" type="password" placeholder="Password" required="" minlength="6" title="please enter your password" />
+      <span class="form-registration__error" id="password_message_err"></span>
+    </div>
+
+    <button class="modal-login__button button button_accent button_smooth ">Log in</button>
+  </form>
+
+  <button class="modal__btn-close button  modal-basket__btn-close " type="button" title="close login" id="closeModalLogin">
+    <span class="visually-hidden">close</span>
+  </button>
 </dialog>
-
-<button id="openModal">Открыть модальное окно</button>
-
-<script>
-    var openModalButton = document.getElementById("openModal");
-    var closeModalButton = document.getElementById("closeModal");
-    var modal = document.getElementById("modal");
-
-    openModalButton.addEventListener("click", function () {
-        modal.showModal();
-    });
-
-    closeModalButton.addEventListener("click", function () {
-        modal.close();
-    });
-</script>
