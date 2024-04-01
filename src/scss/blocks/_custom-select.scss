@@ -1,14 +1,31 @@
 .custom-select {
     position: relative;
     display: inline-block;
-
+    
+    &__wrap-over {
+        position: relative;
+    }
+    
     &__over {
         display: block;
         cursor: pointer;
         border: 1px solid #ccc;
         border-radius: 5px;
-        background: #f2f2f2;
+        min-width: 200px;
+        background-color: transparent;
         padding: 5px 10px;
+    }
+
+    &__arr-img {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        translate: 0 -50%;
+        fill: red;
+
+        &_active {
+            transform: rotate(180deg);
+        }
     }
 
     &__options {
@@ -17,7 +34,6 @@
         z-index: 1;
         border: 1px solid #ccc;
         border-radius: 5px;
-        max-height: 150px;
         background: #fff;
         list-style: none;
         padding: 0;

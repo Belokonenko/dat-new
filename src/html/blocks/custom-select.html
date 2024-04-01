@@ -5,8 +5,13 @@
         <option value="3">Option 3</option>
         <option value="4">Option 4</option>
     </select>
+    <div class="custom-select__wrap-over">
+        <div class="custom-select__over" hidden>Выберите опцию</div>
 
-    <div class="custom-select__over" hidden>Выберите опцию</div>
+        <svg class="custom-select__arr-img" width="10" height="10">
+            <use xlink:href="#arr-menu"></use>
+        </svg>
+    </div>
 
     <ul class="custom-select__options select-options" style="display: none" hidden>
         <li data-value="1">Option 1</li>
