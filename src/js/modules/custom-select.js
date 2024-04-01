@@ -5,9 +5,9 @@ export default function customSelect() {
         customSelects.forEach((item) => {
             console.log(item);
 
-            const select = item.querySelector(".mySelect");
-            const selectStyled = item.querySelector(".select-styled");
-            const selectOptions = item.querySelector(".select-options");
+            const select = item.querySelector(".custom-select__select");
+            const selectStyled = item.querySelector(".custom-select__over");
+            const selectOptions = item.querySelector(".custom-select__options");
 
             selectStyled.addEventListener("click", function () {
                 selectOptions.style.display =
