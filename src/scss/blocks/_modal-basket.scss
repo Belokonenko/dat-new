@@ -1,5 +1,27 @@
 .modal-basket {
-    background-color: var(--color-bg-light);
+    --width-radial-gradient: 40%;
+
+    background: #f8f8f8; /* Цвет фона */
+    background: radial-gradient(
+            ellipse var(--width-radial-gradient) 50% at 0% 50%,
+            rgb(132, 190, 81, .2) 0%,
+            rgb(210, 230, 189, 0) 100%
+        ),
+        radial-gradient(
+            ellipse var(--width-radial-gradient) 50% at 0% 0%,
+            rgb(231, 78, 19, 0.1) 0%,
+            rgb(231, 78, 19, 0) 100%
+        ),
+        radial-gradient(
+            ellipse var(--width-radial-gradient) 50% at 100% 50%,
+            rgb(231, 78, 19, 0.1) 0%,
+            rgb(231, 78, 19, 0) 100%
+        );
+
+    @include phone-l {
+        --width-radial-gradient: 20%;
+    }
+
     &__form {
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-left: none;

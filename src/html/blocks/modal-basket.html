@@ -1,10 +1,46 @@
 <dialog class="modal modal-basket" open>
     <h2 class="title title_leaf-l title_leaf-r title_size_l modal-basket__title">Basket</h2>
 
-    <form class="modal-basket__form">
+    <form class="modal-basket__form" name="modal-basket__form" action="">
         <span> Name </span>
         @@include('picture-png.html', { "path_img" : "../../img/prod-crorpp/cro", "alt": "image Crorpp", "class-name":"modal-basket__img", "class-name-wrap":"modal-basket__img-wrap" ,"width":"254", "height": "171" })
+        <span>7814,63 грн</span>
+        <span>Ціна за 5 л </span>
+        <span>Виробник</span>
+
+        <img src="" alt="../../img/Svg/fms.svg" />
+        <span>ФМС Украина</span>
+
+        <select class="seleclt-volume" name="seleclt-volume">
+            <option selected value="5l">5l</option>
+            <option value="8l">8l</option>
+            <option value="10l">10l</option>
+        </select>
+
+        Quantity
+        <!-- Number entry -->
+        <input type="number" id="numberInput" inputmode="numeric" value="1" min="1" pattern="[0-9]*" inputmode="numeric" />
+        <!-- Button to decrease by 1 -->
+        <button type="button" aria-label="take away one item" title="take away one item" id="decrementButton" onclick="decrementNumber()">-</button>
+        <!-- Button to increase by 1 -->
+        <button type="button" aria-label="add one product" title="add one product" id="incrementButton" onclick="incrementNumber()">+</button>
     </form>
+
+    <div class="block-btn">
+        <button type="button">
+            <svg class="" width="16" height="16">
+                <use xlink:href="#basket"></use>
+            </svg>
+            Continue shopping
+        </button>
+        <button type="button">
+            <svg class="" width="20" height="20">
+                <use xlink:href="#list"></use>
+            </svg>
+
+            Make an order
+        </button>
+    </div>
 
     <button class="modal__btn-close button modal-basket__btn-close" type="button" title="close basket" id="closeModalLogin">
         <span class="visually-hidden">close</span>
