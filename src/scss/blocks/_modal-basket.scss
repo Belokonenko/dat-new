@@ -1,10 +1,12 @@
 .modal-basket {
     --width-radial-gradient: 40%;
+    max-width: 1110px;
+    width: 100%;
 
     background: #f8f8f8; /* Цвет фона */
     background: radial-gradient(
             ellipse var(--width-radial-gradient) 50% at 0% 50%,
-            rgb(132, 190, 81, .2) 0%,
+            rgb(132, 190, 81, 0.2) 0%,
             rgb(210, 230, 189, 0) 100%
         ),
         radial-gradient(
@@ -22,9 +24,76 @@
         --width-radial-gradient: 20%;
     }
 
+    &__title {
+        margin-bottom: 25px;
+    }
+
     &__form {
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-left: none;
         border-right: none;
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+}
+
+.product-info {
+    &__title {
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    &__details-block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    &__description {
+        display: grid;
+        grid-template-rows: repeat(4, max-content);
+        align-self: center;
+    }
+
+    &__packaging {
+        margin-bottom: 30px;
+    }
+
+    &__block-firm {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+}
+
+.product-pic {
+    position: relative;
+    display: block;
+    width: 285px;
+    height: 192px;
+    border-radius: 5px;
+    background-color: var(--color-bg-alpha);
+
+    &__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 92px;
+        translate: -50% -50%;
+    }
+}
+.select-castom {
+    &__select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        min-width: 260px;
+        max-height: 47px;
+
+        padding: 10px 20px;
+        background-color: initial;
+        border: var(--color-accent) 1px solid;
+        border-radius: 29px;
     }
 }
