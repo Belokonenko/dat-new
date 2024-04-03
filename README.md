@@ -1,5 +1,6 @@
 # DAT
-Online shope
+Online shope.
+Git page https://belokonenko.github.io/dat-new/
 
 ## Демонстрация
 
