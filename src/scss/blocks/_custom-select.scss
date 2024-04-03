@@ -7,6 +7,7 @@
     }
     
     &__over {
+
         display: block;
         cursor: pointer;
         border: 1px solid #ccc;
@@ -14,6 +15,7 @@
         min-width: 200px;
         background-color: transparent;
         padding: 5px 10px;
+        background-color: blue;
     }
 
     &__arr-img {
@@ -22,11 +24,13 @@
         right: 5px;
         translate: 0 -50%;
         fill: red;
-
-        &_active {
-            transform: rotate(180deg);
-        }
+        transition: all .5s ease-in-out;
     }
+    
+    &.custom-select_active .custom-select__arr-img {
+        transform: rotate(180deg); 
+    }
+
 
     &__options {
         position: absolute;
