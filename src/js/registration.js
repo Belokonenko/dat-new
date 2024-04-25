@@ -9,7 +9,6 @@ import maskPhone from "./modules/maskPhone";
 import validatePassword from "./modules/validatePassword";
 import validateAllFilds from "./modules/validateAllFilds";
 import validateEmail from "./modules/validateMail";
-import autofill from "./modules/autofill";
 import validatePasswordConfirm from "./modules/validatePasswordConfirm";
 
 document.addEventListener("DOMContentLoaded", () => {

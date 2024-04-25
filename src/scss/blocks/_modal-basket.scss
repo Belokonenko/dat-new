@@ -35,6 +35,18 @@
         padding: 30px 0;
         margin-bottom: 30px;
     }
+
+    &__block-btn {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        
+        @include tablet {
+           flex-direction: column;             
+           gap: 11px;
+        }
+
+    }
 }
 
 .product-info {
@@ -83,17 +95,16 @@
         translate: -50% -50%;
     }
 }
-.select-castom {
-    &__select {
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
+.custom-select {
+    &__over {
+        background-color: red;
+        display: flex;
         min-width: 260px;
         max-height: 47px;
-
         padding: 10px 20px;
         background-color: initial;
         border: var(--color-accent) 1px solid;
         border-radius: 29px;
     }
+    
 }

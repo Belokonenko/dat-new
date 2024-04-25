@@ -3,7 +3,7 @@
     transform: var(--transition-duration);
     background-color: transparent;
     @include reset-button;
-  
+
     @include tablet {
         // max-width: 100%;
     }
@@ -15,10 +15,54 @@
             aspect-ratio: 1;
         }
     }
+    
+    &_basket {
+        min-width: 260px;
+        height: 44px;  
+        padding: 0px 23px;
+        gap: 10px;
+        
+        & svg {
+            fill: currentColor;
+            translate: 0 -1px;
+        }
+    }
+    
+    &_accent-light {
+        display: flex;
+        width: 219px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: var(--color-accent);
+        border: 1px solid currentColor;
+        font-weight: 700;
+        line-height: 0;
 
-    button__block-text {
+        @include tablet {
+            width: 100%;
+        }
+
         @include hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: box-shadow 0.2s ease-in-out;
+            transition: all 0.3s ease;
+        }
 
+        &:active {
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+            transition: box-shadow 0.1s ease-in-out;
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: box-shadow 0.2s ease-in-out;
+            transition: all 0.3s ease;
+        }
+
+        & svg {
+            fill: currentColor;
         }
     }
 
@@ -44,7 +88,7 @@
 
         &:active {
             box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
-            background-color: var(--color-epsilon);
+            // background-color: var(--color-accent-dark);
             transition: box-shadow 0.1s ease-in-out;
         }
 

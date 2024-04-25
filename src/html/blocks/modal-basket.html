@@ -1,4 +1,4 @@
-<dialog class="modal modal-basket">
+<dialog class="modal modal-basket" open>
     <h2 class="title title_leaf-l title_leaf-r title_size_l modal-basket__title">Basket</h2>
 
     <form class="modal-basket__form product-info" name="modal-basket__form" action="">
@@ -17,25 +17,17 @@
             </div>
 
             <div>
-                <div class="select-castom">
-                    <select class="select-castom__select" name="seleclt-volume">
-                        <option selected value="5l">canister 5l</option>
-                        <option value="8l">canister 8l</option>
-                        <option value="10l">canister 10l</option>
-                    </select>
-                </div>
-
-                <div class="custom-select">
-                    <select class="mySelect">
+                <div class="custom-select" >
+                    <select class="mySelect visually-hidden ">
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
                         <option value="3">Option 3</option>
                         <option value="4">Option 4</option>
                     </select>
 
-                    <div class="select-styled__over" hidden>Option 2 </div>
+                    <div class="select-styled__over custom-select__over" hidden>Option 2</div>
 
-                    <ul class="select-options" style="display: none" hidden="">
+                    <ul class="select-options custom-select__options" style="display: none" >
                         <li data-value="1">Option 1</li>
                         <li data-value="2">Option 2</li>
                         <li data-value="3">Option 3</li>
@@ -43,25 +35,26 @@
                     </ul>
                 </div>
 
-                Quantity
-                <!-- Number entry -->
-                <input type="number" id="numberInput" inputmode="numeric" value="1" min="1" pattern="[0-9]*" inputmode="numeric" />
-                <!-- Button to decrease by 1 -->
-                <button type="button" aria-label="take away one item" title="take away one item" id="decrementButton" onclick="decrementNumber()">-</button>
-                <!-- Button to increase by 1 -->
-                <button type="button" aria-label="add one product" title="add one product" id="incrementButton" onclick="incrementNumber()">+</button>
+                <!-- Quantity -->
+                <!-- <!-1- Number entry -1-> -->
+                <!-- <input type="number" id="numberInput" inputmode="numeric" value="1" min="1" pattern="[0-9]*" inputmode="numeric" /> -->
+                <!-- <!-1- Button to decrease by 1 -1-> -->
+                <!-- <button type="button" aria-label="take away one item" title="take away one item" id="decrementButton" onclick="decrementNumber()">-</button> -->
+                <!-- <!-1- Button to increase by 1 -1-> -->
+                <!-- <button type="button" aria-label="add one product" title="add one product" id="incrementButton" onclick="incrementNumber()">+</button> -->
             </div>
         </div>
     </form>
 
-    <div class="block-btn">
-        <button type="button">
+    <div class="modal-basket__block-btn">
+        <button class="button button_accent-light button_smooth  button_basket" type="button" >
             <svg class="" width="16" height="16">
                 <use xlink:href="#basket"></use>
             </svg>
             Continue shopping
         </button>
-        <button type="button">
+
+        <button class="button button_accent  button_smooth button_basket" type="button ">
             <svg class="" width="20" height="20">
                 <use xlink:href="#list"></use>
             </svg>

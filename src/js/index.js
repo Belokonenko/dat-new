@@ -7,6 +7,7 @@ import navProd from './modules/navProd';
 import scrollToTop from './modules/scrollToTop';
 import modal from './modules/modal';
 import modalBasket from './modules/modal-basket';
+import customSelect from './modules/custom-select';
 
 document.addEventListener('DOMContentLoaded', () => {
     buttonBurger('dropdown-panel');
@@ -18,4 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
     modal('.modal-login', '.btn-open-modal', '.modal-login__btn-close');
     modal('.modal-basket', '.btn-modal-basket', '.modal-basket__btn-close');
     modalBasket();
+    customSelect();
 });
