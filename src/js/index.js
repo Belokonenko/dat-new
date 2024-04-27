@@ -8,6 +8,7 @@ import scrollToTop from './modules/scrollToTop';
 import modal from './modules/modal';
 import modalBasket from './modules/modal-basket';
 import customSelect from './modules/custom-select';
+import quantity from './modules/quantity/quantity';
 
 document.addEventListener('DOMContentLoaded', () => {
     buttonBurger('dropdown-panel');
@@ -20,5 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     modal('.modal-basket', '.btn-modal-basket', '.modal-basket__btn-close');
     modalBasket();
     customSelect();
+    quantity();
 
 });
