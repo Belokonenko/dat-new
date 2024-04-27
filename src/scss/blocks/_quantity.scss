@@ -1,0 +1,39 @@
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    /* Скрыть стрелки у элемента ввода числа */
+    &__number-input::-webkit-outer-spin-button,
+    &__number-input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &__number-input {
+        -moz-appearance: textfield; /* Firefox */
+    }
+
+    &__number-input {
+        appearance: none;
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    &__decrement-button,
+    &__increment-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--color-main-light) ;
+        background-color:var(--color-main-light) ;
+        color: var(--color-text-light);
+        border-radius: 50%;
+    }
+    &__increment-button {
+    }
+}

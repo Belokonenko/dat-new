@@ -3,15 +3,11 @@ export default function quantity() {
 
     if (quantityBlockList) {
         quantityBlockList.forEach(item => {
-            console.log(item)
             
-            const numberInput = item.querySelector('#numberInput');
-            const decrementButton = item.querySelector('#decrementButton');
-            const incrementButton = item.querySelector('#incrementButton');
+            const numberInput = item.querySelector('.quantity__number-input');
+            const decrementButton = item.querySelector('.quantity__decrement-button');
+            const incrementButton = item.querySelector('.quantity__increment-button');
 
-            console.log(numberInput)
-            console.log(decrementButton)
-            console.log(incrementButton)
 
 
             // Функция для уменьшения номера на 1
