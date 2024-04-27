@@ -95,16 +95,3 @@
         translate: -50% -50%;
     }
 }
-.custom-select {
-    &__over {
-        background-color: red;
-        display: flex;
-        min-width: 260px;
-        max-height: 47px;
-        padding: 10px 20px;
-        background-color: initial;
-        border: var(--color-accent) 1px solid;
-        border-radius: 29px;
-    }
-    
-}

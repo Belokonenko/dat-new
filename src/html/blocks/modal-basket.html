@@ -1,4 +1,4 @@
-<dialog class="modal modal-basket" open>
+<dialog class="modal modal-basket">
     <h2 class="title title_leaf-l title_leaf-r title_size_l modal-basket__title">Basket</h2>
 
     <form class="modal-basket__form product-info" name="modal-basket__form" action="">
@@ -26,9 +26,9 @@
                         <option value="4">Option 4</option>
                     </select>
 
-                    <div class="custom-select__over" hidden></div>
+                    <div class="custom-select__over custom-select__over_them-accetn" hidden></div>
 
-                    <ul class="custom-select__options" style="display: none" >
+                    <ul class="custom-select__options custom-select__options_them-accetn" style="display: none" >
                         <li data-value="1">Option 1</li>
                         <li data-value="2">Option 2</li>
                         <li data-value="3">Option 3</li>
@@ -40,7 +40,7 @@
                 <!-- Number entry -->
                 <input type="number" id="numberInput" inputmode="numeric" value="1" min="1" pattern="[0-9]*" inputmode="numeric" />
                 <!-- Button to decrease by 1 -->
-                <button type="button" aria-label="take away one item" title="take away one item" id="decrementButton" onclick="decrementNumber()">-</button>
+                <button type="button" aria-label="take away one item" title="take away one product" id="decrementButton" onclick="decrementNumber()">-</button>
                 <!-- Button to increase by 1 -->
                 <button type="button" aria-label="add one product" title="add one product" id="incrementButton" onclick="incrementNumber()">+</button>
             </div>
