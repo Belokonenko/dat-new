@@ -20,4 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
     modal('.modal-basket', '.btn-modal-basket', '.modal-basket__btn-close');
     modalBasket();
     customSelect();
+
 });
