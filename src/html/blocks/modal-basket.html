@@ -12,12 +12,12 @@
                 <span class="text_strong">Виробник</span>
                 <div class="product-info__block-firm">
                     <img src="./img/Svg/fms.svg" alt="" />
-                    <span>ФМС Украина</span>
+                    <span class="product-info__firm-text">ФМС Украина</span>
                 </div>
             </div>
 
-            <div>
-                <div class="custom-select" >
+            <div class="modal-basket__wrap-select-quantity">
+                <div class="custom-select">
                     <select class="custom-select__select visually-hidden">
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
@@ -25,7 +25,7 @@
                         <option value="4">Option 4</option>
                     </select>
 
-                    <div class="custom-select__over custom-select__over_them-accetn" hidden></div>
+                    <div class="custom-select__over custom-select__over_them-accetn modal-basket__selcect" hidden></div>
 
                     <ul class="custom-select__options custom-select__options_them-accetn" style="display: none">
                         <li data-value="1">Option 1</li>
@@ -35,14 +35,12 @@
                     </ul>
                 </div>
 
-                <div class="quantity">
-                    Quantity
+                <div class="quantity modal-basket__quantity">
+                    <span class="quantity__text">Quantity</span>
 
-                    <button type="button" class="quantity__decrement-button" aria-label="take away one item" title="take away one product"  >-</button>
-                    <!-- Number entry -->
+                    <button type="button" class="button quantity__decrement-button" aria-label="take away one item" title="take away one product">-</button>
                     <input type="number" class="quantity__number-input" inputmode="numeric" value="1" min="1" pattern="[0-9]*" inputmode="numeric" />
-                    <!-- Button to increase by 1 -->
-                    <button type="button" class="quantity__increment-button" aria-label="add one product" title="add one product"  >+</button>
+                    <button type="button" class="button quantity__increment-button" aria-label="add one product" title="add one product">+</button>
                 </div>
             </div>
         </div>
