@@ -9,7 +9,6 @@
     transform: translate(-50%, -50%);
     background-color: var(--color-bg-light);
     border-radius: 1rem;
-    overflow: unset;
     border: none;
 
     @include tablet {
@@ -26,16 +25,16 @@
 
     &__btn-close {
         position: absolute;
-        top: -40px;
-        right: -40px;
+        top: 10px;
+        right: 10px;
         box-sizing: content-box;
         width: 30px;
         aspect-ratio: 1;
         padding: 10px;
 
         @include tablet {
-            right: 0px;
-            top: -50px;
+            right: 10px;
+            top: 10px;
         }
 
         &::before,
@@ -45,7 +44,8 @@
 
             width: 30px;
             height: 4px;
-            background-color: var(--color-bg-light);
+            background-color: var(--color-main-light);
+
             border-radius: 5px;
             left: 50%;
             translate: -50% -50%;
