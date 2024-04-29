@@ -18,6 +18,13 @@ const csso = require('gulp-csso');
 const htmlclean = require('gulp-htmlclean');
 const webp = require("gulp-webp") ;
 
+gulp.task("favicon:dev", function () {
+    return gulp.src("./src/*.ico")
+        .pipe(changed("./build/")) // Проверяем, изменился ли файл
+        .pipe(gulp.dest("./build/")); // Копируем файл в /build/
+});
+
+
 gulp.task("html:docs", function () {
     return gulp
         .src(["./src/html/**/*.html", "!./src/html/blocks/*.html"])
@@ -137,5 +144,6 @@ gulp.task("watch:docs", function () {
     gulp.watch("./src/fonts/**.*", gulp.parallel("fonts:docs"));
     gulp.watch("./src/files/**.*", gulp.parallel("files:docs"));
     gulp.watch("./src/js/**.*", gulp.parallel("js:docs"));
+    gulp.watch("./src/favicon.ico", gulp.parallel("favicon:dev")); // Добавляем наблюдение за favicon.ico
 });
 
