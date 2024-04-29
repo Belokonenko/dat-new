@@ -1,6 +1,33 @@
 .our-team {
+    --width-radial-gradient: 40%;
+
+    background: radial-gradient(
+            ellipse var(--width-radial-gradient) 50% at 0% 97%,
+            rgb(132, 190, 81, 0.2) 0%,
+            rgb(210, 230, 189, 0) 100%
+        ),
+        radial-gradient(
+            ellipse var(--width-radial-gradient) 50% at 0% 60%,
+            rgb(231, 78, 19, 0.1) 0%,
+            rgb(231, 78, 19, 0) 100%
+        ),
+        radial-gradient(
+            ellipse var(--width-radial-gradient) 50% at 100% 20%,
+            rgb(231, 78, 19, 0.1) 0%,
+            rgb(231, 78, 19, 0) 100%
+        ),
+        radial-gradient(
+            ellipse var(--width-radial-gradient) 50% at 100% 97%,
+            rgb(132, 190, 81, 0.2) 0%,
+            rgb(210, 230, 189, 0) 100%
+        );
+
+    @include phone-l {
+        --width-radial-gradient: 20%;
+    }
+
     &__breadcrumbs {
-    margin-bottom: 21px;
+        margin-bottom: 21px;
     }
 
     &__title {
@@ -12,7 +39,7 @@
     }
 
     &__sec-gallery {
-        margin-bottom: 125px;
+        padding-bottom: 125px;
 
         @include phone-l {
             margin-bottom: 50px;
