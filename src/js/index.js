@@ -9,6 +9,7 @@ import modal from './modules/modal';
 import modalBasket from './modules/modal-basket';
 import customSelect from './modules/custom-select';
 import quantity from './modules/quantity/quantity';
+import modalLogin from './modules/modalLogin';
 
 document.addEventListener('DOMContentLoaded', () => {
     buttonBurger('dropdown-panel');
@@ -22,5 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     modalBasket();
     customSelect();
     quantity();
+    modalLogin();
 
 });
