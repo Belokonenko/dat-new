@@ -1,0 +1,106 @@
+.card-order {
+    background-color: var(--color-bg-alpha);
+    min-height: 117px;
+    
+    &__inner {
+
+        display: grid;
+        grid-template-columns: max-content 1fr max-content  max-content ;
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    &__wrap-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        width: 112px;
+        height: 76px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+        background: var(--color-bg-alpha);
+    }
+
+    &__img {
+    }
+
+    &__wrap-desc {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        grid-template-rows: repeat(2,1fr);
+        gap:  8px 20px ;
+    }
+    
+    &__title {
+        grid-column: 1/-1;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    &__quntity {
+
+        align-self: baseline;
+    }
+    
+    &__date {
+        color: rgba(0, 0, 0, 0.2);
+        align-self: baseline;
+    }
+
+    &__status {
+        align-self: baseline;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 108px;
+        height: 27px;
+        border-radius: 25px;
+        color: var(--color-text-light);
+        &_paid {
+            background-color: var(--color-accent-dark);
+        }
+        &_on-way {
+            background-color: gold;
+        }
+        &_completed {
+            background-color: var(--color-main);
+        }
+    }
+
+    &__cost {
+        font-weight: 700;
+        font-size: 25px;
+        color: var(--color-main-light);
+    }
+
+    &__delete {
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        position: relative;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 24px;
+            height: 2px;
+            background-color: gray;
+        }
+
+        &::before {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+
+}
