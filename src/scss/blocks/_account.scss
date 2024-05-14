@@ -5,7 +5,7 @@
         grid-template-columns: max-content 1fr;
         gap: 30px;
 
-        @include phone-l  {
+        @include tablet  {
             grid-template-columns: 1fr;
 
         }
@@ -69,7 +69,11 @@
     }
 
     // content
-
+    &__tab-content {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    
     &__content-tab {
         display: grid;
         grid-template-columns: 1fr 1fr;
