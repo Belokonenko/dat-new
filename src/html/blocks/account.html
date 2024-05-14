@@ -31,11 +31,11 @@
                 <li>
                     <article class="card__order">
                         <div>
-                            <img src="img/prod-hrus/hrus.png" width="113" height="76" alt="image product">
+                            <img src="img/prod-hrus/hrus.png" width="113" height="76" alt="image product" />
                         </div>
                         <h3>Гербіцид Комманд®, ФМС УКРАЇНА</h3>
                         <span class="Quantity">Quantity x <span>1</span></span>
-                        <div class="status">Paid </div>
+                        <div class="status">Paid</div>
                         <!-- Paid, on the way, completed -->
                         <span class="cost">7800.58</span>
                         <button class="delete" type="button" title="delete item" aria-label="delete item">
@@ -44,6 +44,180 @@
                     </article>
                 </li>
             </ul>
+
+            <div>
+                <form class="form-registration form-registration__form">
+                    <fieldset class="form-registration__fildset">
+                        <legend class="visually-hidden">Registration</legend>
+
+                        <div class="form-registration__fild">
+                            <input
+                                class="name form-registration__input"
+                                name="name"
+                                id="name"
+                                type="text"
+                                placeholder="Name"
+                                required=""
+                                minlength="2"
+                                maxlength="50"
+                                spellcheck="false"
+                                title="Name"
+                            />
+                            <span class="form-registration__error" id="name_message_err"></span>
+                        </div>
+
+                        <div class="form-registration__fild">
+                            <input
+                                class="surname form-registration__input"
+                                name="surname "
+                                id="surname"
+                                type="text"
+                                placeholder="Surname"
+                                required=""
+                                minlength="2"
+                                maxlength="50"
+                                spellcheck="false"
+                                title="Surname"
+                            />
+                            <span class="form-registration__error" id="surname_message_err"></span>
+                        </div>
+
+                        <div class="form-registration__fild">
+                            <input
+                                class="email form-registration__input"
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="E-mail"
+                                required=""
+                                spellcheck="false"
+                                title="example@mail.com"
+                            />
+                            <span class="form-registration__error" id="email_message_err"></span>
+                        </div>
+
+                        <!-- pattern="\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}" -->
+                        <!-- title="+380 (xx) xxx-xx-xx" -->
+                        <div class="form-registration__fild">
+                            <input
+                                class="phone-input form-registration__input"
+                                name="phone-input"
+                                id="phone-input"
+                                type="tel"
+                                placeholder="Phone"
+                                required=""
+                                minlength="5"
+                                maxlength="20"
+                                spellcheck="false"
+                            />
+                            <span class="form-registration__error" id="phone-input_message_err"></span>
+                        </div>
+
+                        <div class="form-registration__fild form-registration__password">
+                            <input
+                                class="password form-registration__input"
+                                id="password"
+                                name="password"
+                                type="password"
+                                placeholder="Password"
+                                required=""
+                                minlength="6"
+                                title="please enter your password"
+                            />
+                            <span class="form-registration__error" id="password_message_err"></span>
+                        </div>
+
+                        <button class="button button_accent button_smooth form-registration__button">Save settings</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div>
+                <form class="form-registration form-registration__form">
+                    <fieldset class="form-registration__fildset">
+                        <legend class="visually-hidden">Registration</legend>
+
+                        <div class="form-registration__fild">
+                            <input
+                                class="name form-registration__input"
+                                name="name"
+                                id="name"
+                                type="text"
+                                placeholder="Name"
+                                required=""
+                                minlength="2"
+                                maxlength="50"
+                                spellcheck="false"
+                                title="Name"
+                            />
+                            <span class="form-registration__error" id="name_message_err"></span>
+                        </div>
+
+                        <div class="form-registration__fild">
+                            <input
+                                class="surname form-registration__input"
+                                name="surname "
+                                id="surname"
+                                type="text"
+                                placeholder="Surname"
+                                required=""
+                                minlength="2"
+                                maxlength="50"
+                                spellcheck="false"
+                                title="Surname"
+                            />
+                            <span class="form-registration__error" id="surname_message_err"></span>
+                        </div>
+
+                        <div class="form-registration__fild">
+                            <input
+                                class="email form-registration__input"
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="E-mail"
+                                required=""
+                                spellcheck="false"
+                                title="example@mail.com"
+                            />
+                            <span class="form-registration__error" id="email_message_err"></span>
+                        </div>
+
+                        <!-- pattern="\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}" -->
+                        <!-- title="+380 (xx) xxx-xx-xx" -->
+                        <div class="form-registration__fild">
+                            <input
+                                class="phone-input form-registration__input"
+                                name="phone-input"
+                                id="phone-input"
+                                type="tel"
+                                placeholder="Phone"
+                                required=""
+                                minlength="5"
+                                maxlength="20"
+                                spellcheck="false"
+                            />
+                            <span class="form-registration__error" id="phone-input_message_err"></span>
+                        </div>
+
+                        <div class="form-registration__fild form-registration__password">
+                            <input
+                                class="password form-registration__input"
+                                id="password"
+                                name="password"
+                                type="password"
+                                placeholder="Password"
+                                required=""
+                                minlength="6"
+                                title="please enter your password"
+                            />
+                            <span class="form-registration__error" id="password_message_err"></span>
+                        </div>
+
+                        <button class="button button_accent button_smooth form-registration__button">Save settings</button>
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </div>
 </div>
