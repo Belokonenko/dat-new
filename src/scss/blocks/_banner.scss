@@ -1,19 +1,20 @@
 .banner {
     position: relative;
+
     min-height: 100vh;
 
-    @include responsive-background-image("../img/banner-img-1/b_1");
-
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: right top;
+    background-size: cover;
 
-    @include tablet {
-    }
+    @include responsive-background-image("../img/banner-img-1/b_1");
+    @include tablet {}
 
     &__inner {
-        padding-top: 220px;
         display: grid;
+
+        padding-top: 220px;
+
         min-height: 100vh;
 
         @include tablet {
@@ -24,11 +25,14 @@
     // --- text_faded ---
     &__block-text {
         display: grid;
-        padding-top: 15%;
+
         align-content: start;
-        
+
+        padding-top: 15%;
+
         @include tablet {
             display: contents;
+
             padding-top: 0;
         }
     }
@@ -50,14 +54,15 @@
     }
 
     &__desc {
-        max-width: 561px;
         margin-bottom: 23px;
 
-        @include tablet {
-            max-width: 70%;
-            margin-bottom: 33px;
-        }
+        max-width: 561px;
 
+        @include tablet {
+            margin-bottom: 33px;
+
+            max-width: 70%;
+        }
         @include phone-l {
             max-width: 100%;
         }
@@ -66,9 +71,11 @@
     &__button {
         @include tablet {
             order: 1;
+
             margin-bottom: 40px;
-            justify-self: center;
             margin-left: 0;
+
+            justify-self: center;
         }
     }
 
@@ -76,42 +83,41 @@
 
     &__block-image {
         display: grid;
+
         align-items: end;
         justify-content: end;
 
         @include tablet {
             align-items: end;
             justify-content: center;
+
             margin-bottom: 35px;
         }
     }
 
     &__wraper-image {
         position: relative;
-        border-radius: 40% 0px 40% 0px / 40% 0px 40% 0px;
 
-        max-width: 80vh;
         width: 45vw;
         min-width: 800px;
-        aspect-ratio: 1 / 0.86;
-        background-size: cover;
+        max-width: 80vh;
+
         background-position: center;
+        background-size: cover;
+        border-radius: 40% 0px 40% 0px / 40% 0px 40% 0px;
 
+        aspect-ratio: 1 / 0.86;
         @include responsive-background-image("../img/banner-img-2/b-2");
-
         @include desktop-l {
             min-width: 600px;
         }
-
         @include desktop {
             min-width: 500px;
         }
-
         @include tablet {
             min-width: 94vw;
         }
-
-        @include phone-m{
+        @include phone-m {
             min-width: 91vw;
         }
     }
@@ -120,24 +126,29 @@
 
     &__leaf-1 {
         position: absolute;
-        left: -18%;
         bottom: 16%;
+        left: -18%;
+
         width: 30%;
     }
 
     &__leaf-2 {
         position: absolute;
-        left: -14%;
         bottom: 11%;
+        left: -14%;
+
         width: 20%;
+
         transform: scaleX(-1);
     }
 
     &__leaf-3 {
         position: absolute;
-        right: 2%;
         top: 3%;
+        right: 2%;
+
         width: 30%;
+
         transform: translateY(-60%) scaleX(-1);
     }
 }

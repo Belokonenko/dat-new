@@ -1,15 +1,21 @@
 //--- card ---
 
 .card {
-    display: grid;
-    grid-template-rows: 1fr max-content;
     position: relative;
+
+    display: grid;
+
+    grid-template-rows: 1fr max-content;
+
+    padding: 10px;
+
     width: 100%;
     min-height: 355px;
-    border-radius: 20px;
+
     background: var(--color-bg-alpha);
+    border-radius: 20px;
+
     transition: all 0.3s ease;
-    padding: 10px;
     // background-color: green;
 
     &:hover {
@@ -18,17 +24,21 @@
 
     &__btn-compare {
         position: absolute;
-        right: 10px;
         top: 10px;
+        right: 10px;
+
         display: inline-block;
+
         padding: 10px;
+
         background-color: transparent;
         border-color: transparent;
     }
 
     &__img-wrap {
-        width: 100px;
         margin: 20px auto 30px auto;
+
+        width: 100px;
     }
 
     &__img {
@@ -36,44 +46,55 @@
 
     &__block-text {
         position: relative;
+
         padding: 20px;
-        border-radius: 20px;
-        background: rgba(140, 50, 19, 0.06);
+
         min-height: 148px;
+
+        background: rgba(140, 50, 19, 0.06);
+        border-radius: 20px;
 
     }
 
     &__prod-name {
-        font-weight: 600;
         margin: 0;
+
+        font-weight: 600;
     }
 
     &__prod-state {
-        color: var(--color-main);
+        margin: 0 0 25px 0 ;
+
         font-size: 0.9rem;
         font-weight: 400;
-        margin: 0 0 25px 0 ;
+
+        color: var(--color-main);
     }
 
     &__prod-parce {
-        color: var(--color-main-light);
+        margin: 0;
+
         font-size: 1.1rem;
         font-weight: 700;
-        margin: 0;
+
+        color: var(--color-main-light);
     }
 
     &__prod-quantity {
+        margin: 0;
+
         font-size: 0.9rem;
         font-weight: 400;
-        margin: 0;
     }
 
     &__btn {
         position: absolute;
-        bottom: 20px;
         right: 20px;
-        box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.15);
+        bottom: 20px;
+
         border-color: transparent;
+
+        box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.15);
     }
 }
 

@@ -3,31 +3,36 @@
 //     outline-offset: -1px;}
 
 .page-html {
-    scroll-behavior: smooth;
     height: 100%;
+
+    scroll-behavior: smooth;
 }
 
 .page-body {
     display: flex;
+
     flex-direction: column;
     // height: 100%;
 
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
     font-size: 16px;
-    color: var(--color-text-dark);
+    font-weight: 400;
+
     line-height: 1.5;
+
+    color: var(--color-text-dark);
 }
 
 .main {
-    overflow: hidden;
     // flex-grow: 1;
     // min-height: var(--header-min-height);
     background-color: var(--color-bg-light);
+
+    overflow: hidden;
 }
 
 .content-padding {
-    padding-top: calc(var(--header-min-height) + 50px) ;
+    padding-top: calc(var(--header-min-height) + 50px);
 
     @include tablet {
         padding-top: 210px;
@@ -36,7 +41,9 @@
 
 ul {
     margin: 0;
+
     padding: 0;
+
     list-style: none;
 }
 
@@ -50,6 +57,7 @@ svg * {
 
 a {
     text-decoration: none;
+
     color: inherit;
 }
 
@@ -64,15 +72,18 @@ a {
 
 fieldset {
     margin-left: 0;
+
     padding: 0;
+
     border: none;
 }
 
 img {
-    height: auto;
     max-width: 100%;
-    user-select: none;
+    height: auto;
+
     pointer-events: none;
+    user-select: none;
 }
 
 input,
@@ -111,9 +122,11 @@ svg * {
  */
 @media (prefers-reduced-motion: reduce) {
     * {
+        transition-duration: 0.01ms !important;
+
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+
         scroll-behavior: auto !important;
     }
 }

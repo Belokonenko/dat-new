@@ -1,10 +1,12 @@
 .account {
     &__tab-wrap {
         display: grid;
-        align-items: start;
-        grid-template-columns: max-content 1fr;
-        gap: 30px;
 
+        align-items: start;
+
+        grid-template-columns: max-content 1fr;
+
+        gap: 30px;
         @include tablet  {
             grid-template-columns: 1fr;
 
@@ -12,12 +14,14 @@
     }
 
     &__tab-list {
-        border-radius: 20px;
-        max-width: 255px;
-        overflow: hidden;
         margin-bottom: 10px;
-        background-color: var(--color-bg-alpha);
 
+        max-width: 255px;
+
+        background-color: var(--color-bg-alpha);
+        border-radius: 20px;
+
+        overflow: hidden;
         @include phone-l  {
             justify-self: center;
 
@@ -28,10 +32,12 @@
     &__tab-btn {
         display: flex;
         align-items: center;
-        gap: 11px;
-        width: 100%;
         padding: 20px;
+        width: 100%;
+
         transition: var(--transition-duration);
+
+        gap: 11px;
 
         &:not(:last-child) {
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -42,8 +48,8 @@
         }
 
         &:active {
-            background-color: var(--color-main-light);
             color: var(--color-text-light);
+            background-color: var(--color-main-light);
         }
 
         &:active svg {
@@ -56,8 +62,8 @@
     }
 
     &__tab-btn_active {
-        background-color: var(--color-main-light);
         color: var(--color-text-light);
+        background-color: var(--color-main-light);
 
         & svg {
             fill: currentColor;
@@ -71,28 +77,35 @@
     // content
     &__tab-content {
         border-radius: 20px;
+
         overflow: hidden;
     }
     
     &__content-tab {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+
         grid-template-rows: repeat(2, 167px);
+        grid-template-columns: 1fr 1fr;
+
         gap: 30px;
     }
     &__content-item {
         display: grid;
+
         align-content: center;
         justify-content: center;
-        gap: 23px;
-        background-color: var(--color-main);
-        border-radius: 20px;
+
         padding: 30px;
 
-        font-weight: 700;
         font-size: 14px;
-        text-transform: uppercase;
+        font-weight: 700;
+
         color: var(--color-text-light);
+        background-color: var(--color-main);
+        border-radius: 20px;
+
+        gap: 23px;
+        text-transform: uppercase;
 
         & svg {
             justify-self: center;
