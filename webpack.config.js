@@ -5,6 +5,7 @@ const config = {
         registration: './src/js/registration.js',
         contacts: './src/js/contacts.js',
         catalogContent: './src/js/catalogContent.js',
+        account: './src/js/accaunt.js'
     },
     output: {
         filename: '[name].bundle.js',
