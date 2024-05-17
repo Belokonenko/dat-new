@@ -1,4 +1,5 @@
 .account {
+    padding-bottom: 120px;
     &__tab-wrap {
         display: grid;
 
@@ -31,8 +32,11 @@
 
     &__tab-btn {
         display: flex;
+
         align-items: center;
+
         padding: 20px;
+
         width: 100%;
 
         transition: var(--transition-duration);
@@ -115,4 +119,14 @@
             text-align: center;
         }
     }
+    &__tab-reg {
+        padding: 30px;
+
+        background-color: var(--color-bg-alpha);
+        border-radius:20px;
+    }
+    
+    // &__fildset {
+    //     gap: 40px 20px !important;
+    // }
 }
